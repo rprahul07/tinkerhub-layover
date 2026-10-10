@@ -6,12 +6,13 @@ import '../../theme/tg_theme.dart';
 import '../ammachi/ammachi_art.dart';
 import '../ammachi/call_screen.dart';
 import '../create/trip_tracker.dart';
+import '../desk/desk_screen.dart';
 import '../explore/explore_screen.dart';
 import '../home/home_screen.dart';
 import '../journey/journey_screen.dart';
 import '../profile/profile_screen.dart';
 
-/// Home · Explore · (Call Ammachi) · Create · Profile
+/// Home · Explore · (Call Ammachi) · Desk · Profile. Create opens from Home's + and Profile.
 class HomeShell extends StatefulWidget {
   const HomeShell({super.key});
 
@@ -24,6 +25,7 @@ class _HomeShellState extends State<HomeShell> {
   final _visited = <int>{0};
   final _home = GlobalKey<HomeScreenState>();
   final _profile = GlobalKey<ProfileScreenState>();
+  final _desk = GlobalKey<DeskScreenState>();
 
   void _go(int i) {
     if (i == _index) return;
@@ -32,8 +34,21 @@ class _HomeShellState extends State<HomeShell> {
       _index = i;
       _visited.add(i);
     });
+    if (i == 2) _desk.currentState?.refresh();
     if (i == 3) _profile.currentState?.refresh();
   }
+
+  /// Track a trip (opens over the tabs; publishing lands on the new post).
+  Future<void> _openCreate() => Navigator.of(context).push(
+    MaterialPageRoute(
+      builder: (route) => TripTracker(
+        onPosted: (j) {
+          Navigator.of(route).pop();
+          _onPosted(j);
+        },
+      ),
+    ),
+  );
 
   Future<void> _onPosted(Journey journey) async {
     _go(0);
@@ -45,10 +60,10 @@ class _HomeShellState extends State<HomeShell> {
   Widget _tab(int i) {
     if (!_visited.contains(i)) return const SizedBox.shrink();
     final child = switch (i) {
-      0 => HomeScreen(key: _home, onExplore: () => _go(1)),
+      0 => HomeScreen(key: _home, onExplore: () => _go(1), onCreate: _openCreate),
       1 => const ExploreScreen(),
-      2 => TripTracker(onPosted: _onPosted),
-      _ => ProfileScreen(key: _profile, onCreate: () => _go(2)),
+      2 => DeskScreen(key: _desk),
+      _ => ProfileScreen(key: _profile, onCreate: _openCreate),
     };
     return TickerMode(enabled: i == _index, child: child);
   }
@@ -68,7 +83,7 @@ class _HomeShellState extends State<HomeShell> {
                 _NavItem(icon: Icons.home_outlined, activeIcon: Icons.home_rounded, label: 'Home', on: _index == 0, onTap: () => _go(0)),
                 _NavItem(icon: Icons.explore_outlined, activeIcon: Icons.explore, label: 'Explore', on: _index == 1, onTap: () => _go(1)),
                 const Expanded(child: _CallButton()),
-                _NavItem(icon: Icons.add_box_outlined, activeIcon: Icons.add_box, label: 'Create', on: _index == 2, onTap: () => _go(2)),
+                _NavItem(icon: Icons.fact_check_outlined, activeIcon: Icons.fact_check, label: 'Desk', on: _index == 2, onTap: () => _go(2)),
                 _NavItem(icon: Icons.person_outline_rounded, activeIcon: Icons.person_rounded, label: 'Profile', on: _index == 3, onTap: () => _go(3)),
               ],
             ),

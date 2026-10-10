@@ -107,7 +107,8 @@ export function voiceRouter(store, { llm, agentKey, publicUrl }) {
       outcome,
       transcript,
       destination: outcome.destination || l.destination,
-      travelers: outcome.travelers || l.travelers,
+      // Ignore implausible group sizes from a garbled transcript.
+      travelers: outcome.travelers >= 1 && outcome.travelers <= 20 ? outcome.travelers : l.travelers,
       travelDate: outcome.travelDate || l.travelDate,
     });
     res.json({ ok: true, outcome });

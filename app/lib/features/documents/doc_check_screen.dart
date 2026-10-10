@@ -104,7 +104,7 @@ class _DocCheckScreenState extends State<DocCheckScreen> {
           Text('Are you ready to apply?', style: TT.display(24, wght: 750)),
           const SizedBox(height: 6),
           Text(
-            'Add up to four documents. We check them against the basic visa conditions and give you a readiness score. Your files are checked and then discarded — never stored.',
+            'Add up to four documents. We check them against the basic visa conditions and give you a readiness score. Your documents are stored securely and only our visa desk can see them.',
             style: TT.ui(14, color: TG.muted, height: 1.5),
           ),
           const SizedBox(height: 18),

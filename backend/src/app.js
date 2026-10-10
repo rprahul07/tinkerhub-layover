@@ -27,6 +27,8 @@ export function createApp(options = {}) {
   const voiceLines = options.voiceLines ?? new VoiceLines(tts);
 
   const uploadsDir = options.uploadsDir ?? path.join(config.publicDir, 'uploads');
+  // Identity documents are private: kept under data/ (never public/), served only via the key-protected dashboard.
+  const docsDir = options.docsDir ?? path.join(config.dataDir, 'docs');
 
   const app = express();
   app.set('trust proxy', true);
@@ -54,13 +56,13 @@ export function createApp(options = {}) {
   app.use('/api', plannerRouter(store, { llm }));
   const key = options.dashboardKey ?? dashboardKey(config.dataDir);
   const voice = options.voice ?? createVoice({ ...config.voice, agentKey: key }, store);
-  app.use('/api', documentsRouter(store, { llm, voice, autoCallScore: config.voice.autoCallScore, allowSpecimens: options.allowSpecimens ?? config.voice.allowSpecimens }));
+  app.use('/api', documentsRouter(store, { llm, voice, autoCallScore: config.voice.autoCallScore, allowSpecimens: options.allowSpecimens ?? config.voice.allowSpecimens, docsDir }));
   app.use('/api', bookingsRouter(store));
   app.use(voiceRouter(store, { llm, agentKey: key, publicUrl: config.voice.publicUrl }));
   // Plivo's audio stream → the Pipecat agent (same public tunnel).
   const agentProxy = createProxyMiddleware({ target: config.voice.agentUrl, ws: true, changeOrigin: true, pathFilter: '/voice/ws' });
   app.use(agentProxy);
-  app.use('/dashboard', dashboardRouter(store, key, voice));
+  app.use('/dashboard', dashboardRouter(store, key, voice, docsDir));
 
   app.use('/api', (_req, _res, next) => next(new HttpError(404, 'No such endpoint')));
 

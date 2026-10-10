@@ -270,6 +270,11 @@ class Api {
     return DocCheck.fromJson(await _send(() async => http.Response.fromStream(await _client.send(req)), timeout: const Duration(seconds: 90)));
   }
 
+  Future<DocCheck?> lastDocCheck() async {
+    final j = (await _get('/me/documents'))['check'];
+    return j == null ? null : DocCheck.fromJson(j as Map<String, dynamic>);
+  }
+
   Future<Booking> book({required String journeyId, required String item, required String category, required int amount, required int guests, required String date}) async {
     final j = await _post('/bookings', {'journeyId': journeyId, 'item': item, 'category': category, 'amount': amount, 'guests': guests, 'date': date});
     return Booking.fromJson(j['booking'] as Map<String, dynamic>);

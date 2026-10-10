@@ -14,8 +14,9 @@ import '../documents/doc_check_screen.dart';
 import 'post_card.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key, required this.onExplore});
+  const HomeScreen({super.key, required this.onExplore, required this.onCreate});
   final VoidCallback onExplore;
+  final VoidCallback onCreate;
 
   @override
   State<HomeScreen> createState() => HomeScreenState();
@@ -72,6 +73,11 @@ class HomeScreenState extends State<HomeScreen> {
           child: Text('Travelgram', style: TT.display(23, wght: 800, spacing: -0.04)),
         ),
         actions: [
+          IconButton(
+            tooltip: 'Create a trip',
+            icon: const Icon(Icons.add_box_outlined),
+            onPressed: widget.onCreate,
+          ),
           IconButton(
             tooltip: 'Search',
             icon: const Icon(Icons.search_rounded),

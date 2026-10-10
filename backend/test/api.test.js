@@ -31,6 +31,7 @@ async function serve(options = {}) {
     tts: { enabled: false },
     voiceLines: { ready: false, filler: () => null, greeting: () => null },
     uploadsDir: path.join(dir, 'uploads'),
+    docsDir: path.join(dir, 'docs'),
     dashboardKey: 'test-key-123',
     voice: createVoice({}, store), // tests never dial real numbers
     allowSpecimens: false,
@@ -500,4 +501,26 @@ test('booking a stay from a trip takes a demo payment and earns 10%', async () =
   assert.equal(body.booking.commissionAed, Math.round(body.booking.amountAed * 0.1));
   const mine = await json(api.base, '/api/me/bookings', { headers: { 'x-user-id': me.id } });
   assert.equal(mine.body.bookings.length, 1);
+});
+
+test('uploaded identity documents are private: only the key-protected dashboard serves them', async () => {
+  const s = await serve();
+  try {
+    const me = await signUp(s.base, 'Doc Privacy', 'doc.privacy');
+    const form = new FormData();
+    form.append('passport', new Blob([new Uint8Array(40_000)], { type: 'image/jpeg' }), 'evil.html');
+    form.append('residence', new Blob(['<svg onload=alert(1)>'], { type: 'image/svg+xml' }), 'x.svg');
+    const body = await (await fetch(`${s.base}/api/documents/check`, { method: 'POST', body: form, headers: { ...DEVICE, 'x-user-id': me.id } })).json();
+    const id = body.leadId;
+    assert.equal((await fetch(`${s.base}/static/docs/${id}/passport.jpg`)).status, 404); // never public
+    assert.equal((await fetch(`${s.base}/dashboard/docs/${id}/passport.jpg`)).status, 401); // needs the key
+    const ok = await fetch(`${s.base}/dashboard/docs/${id}/passport.jpg?key=test-key-123`);
+    assert.equal(ok.status, 200);
+    assert.equal(ok.headers.get('x-content-type-options'), 'nosniff');
+    assert.equal((await fetch(`${s.base}/dashboard/docs/${id}/passport.html?key=test-key-123`)).status, 404); // extension comes from the type, not the name
+    assert.equal((await fetch(`${s.base}/dashboard/docs/${id}/residence.svg?key=test-key-123`)).status, 404); // SVG rejected
+    assert.equal((await fetch(`${s.base}/dashboard/docs/${id}/..%2F..%2Fdb.json?key=test-key-123`)).status, 404);
+  } finally {
+    await s.close();
+  }
 });

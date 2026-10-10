@@ -1,6 +1,7 @@
 // Smart document check: up to four travel documents, scored 0–100 for visa
 // readiness. Gemini reads the images/PDFs; without it we fall back to a basic
-// presence check. Files are only held in memory for the check, never stored.
+// presence check. Uploaded files are kept privately under data/docs/<leadId>/
+// (never in public/) and are viewable only on the key-protected dashboard.
 
 export const DOCS = [
   { id: 'passport', label: 'Passport (photo page)', weight: 35 },

@@ -8,3 +8,4 @@ public/tts/*
 !public/tts/.gitkeep
 public/downloads/
 data/dashboard-key.txt
+data/docs/

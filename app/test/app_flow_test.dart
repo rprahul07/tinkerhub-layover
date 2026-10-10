@@ -115,7 +115,7 @@ MockClient server() => MockClient.streaming((req, body) async {
       ];
       return http.StreamedResponse(Stream.fromIterable(sse.map(utf8.encode)), 200, headers: {'content-type': 'text/event-stream'});
   }
-  return json({'journeys': [], 'creators': [], 'destinations': [], 'plans': []});
+  return json({'journeys': [], 'creators': [], 'destinations': [], 'plans': [], 'bookings': [], 'check': null});
 });
 
 Future<void> boot(WidgetTester tester, {bool signedIn = true}) async {
@@ -187,5 +187,24 @@ void main() {
     expect(find.text('by @sara.trails'), findsOneWidget);
     expect(find.text('Offline'), findsOneWidget);
     await tester.pump(const Duration(seconds: 2));
+  });
+
+  testWidgets('the Desk tab gives the doc checker and trip planner their own space', (tester) async {
+    await boot(tester);
+    await tester.tap(find.bySemanticsLabel('Desk'));
+    await tester.pump(const Duration(seconds: 1));
+    expect(requests, contains('GET /api/me/documents'));
+    expect(find.text('Smart document checker'), findsOneWidget);
+    expect(find.text('Budget trip planner'), findsOneWidget);
+    expect(find.text('Check my documents'), findsOneWidget);
+    expect(find.byTooltip('Create a trip'), findsNothing); // Create lives on Home now
+  });
+
+  testWidgets('Create opens from the + on Home', (tester) async {
+    await boot(tester);
+    await tester.tap(find.byTooltip('Create a trip'));
+    await tester.pump(const Duration(seconds: 1));
+    await tester.pump(const Duration(seconds: 1));
+    expect(find.text('Track a trip'), findsOneWidget);
   });
 }
