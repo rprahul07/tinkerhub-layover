@@ -1,0 +1,2036 @@
+{
+  "creators": [
+    {
+      "id": "c_aisha",
+      "name": "Aisha Al Mansoori",
+      "handle": "aisha.explores",
+      "home": "Dubai",
+      "bio": "Weekend explorer. Desert sunrises, souk snacks, zero fuss.",
+      "hue": 335,
+      "followers": 12400,
+      "following": 210
+    },
+    {
+      "id": "c_rohan",
+      "name": "Rohan Mathew",
+      "handle": "rohan.onroad",
+      "home": "Abu Dhabi",
+      "bio": "Malayali in Abu Dhabi. A road trip every long weekend.",
+      "hue": 205,
+      "followers": 8300,
+      "following": 340
+    },
+    {
+      "id": "c_sara",
+      "name": "Sara Thomas",
+      "handle": "sara.wanders",
+      "home": "Sharjah",
+      "bio": "Nurse by day, planner of very cheap trips by night.",
+      "hue": 275,
+      "followers": 5600,
+      "following": 180
+    },
+    {
+      "id": "c_omar",
+      "name": "Omar Haddad",
+      "handle": "omar.outdoors",
+      "home": "Dubai",
+      "bio": "Hikes, wadis and anything with a view.",
+      "hue": 22,
+      "followers": 15200,
+      "following": 95
+    },
+    {
+      "id": "c_priya",
+      "name": "Priya & Nikhil",
+      "handle": "priyanikhil",
+      "home": "Dubai",
+      "bio": "Two passports, one budget spreadsheet.",
+      "hue": 160,
+      "followers": 9900,
+      "following": 260
+    },
+    {
+      "id": "c_lena",
+      "name": "Lena Fischer",
+      "handle": "lena.in.the.gulf",
+      "home": "Abu Dhabi",
+      "bio": "German in the Gulf. Culture, coffee and long walks.",
+      "hue": 48,
+      "followers": 4100,
+      "following": 150
+    }
+  ],
+  "journeys": [
+    {
+      "id": "j_dubai_budget",
+      "creatorId": "c_aisha",
+      "title": "48 Hours in Old Dubai on AED 900",
+      "dek": "Abra rides for a dirham, the souks, the Creek at sunset and the world’s tallest building — without the price tag.",
+      "region": "Dubai",
+      "country": "United Arab Emirates",
+      "currency": "AED",
+      "tags": [
+        "city",
+        "budget",
+        "food",
+        "culture",
+        "couples"
+      ],
+      "bestMonths": [
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "durationDays": 2,
+      "travelers": 2,
+      "going": 214,
+      "likes": 1830,
+      "pullQuote": "The best ride in Dubai costs one dirham and comes with a view of the Creek.",
+      "story": "Everyone thinks Dubai is expensive. The old side isn’t. We stayed in Deira, ate where the taxi drivers eat, and spent our money on one splurge: the view from the top.",
+      "fields": [
+        {
+          "label": "Getting around",
+          "value": "Metro + abra; a Nol card covers both"
+        },
+        {
+          "label": "Best for",
+          "value": "First-timers and couples"
+        }
+      ],
+      "stops": [
+        {
+          "id": "j_dubai_budget_s1",
+          "name": "Al Fahidi Historical Neighbourhood",
+          "day": 1,
+          "story": "Wind towers, coral-stone walls and quiet lanes — Dubai before the skyline. The coffee museum is worth the entry.",
+          "tip": "Go before 10 am; after that the alleys are an oven.",
+          "fields": [
+            {
+              "label": "Entry fee",
+              "value": "Free to wander"
+            }
+          ],
+          "lat": 25.26423,
+          "lng": 55.30017,
+          "photos": [
+            {
+              "url": "/static/seed/al-fahidi-historical-neighbourhood.jpg",
+              "width": 1280,
+              "height": 959,
+              "caption": "Al Fahidi Historical Neighbourhood",
+              "credit": {
+                "author": "Diego Delso",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Camello_y_campamento,_Al_Bastakiya,_Dubai,_2009-11-23,_DD_8878.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_dubai_budget_s2",
+          "name": "Dubai Creek Abra",
+          "day": 1,
+          "story": "The wooden abra crosses the Creek in five minutes for one dirham. We went back and forth three times just for the view.",
+          "tip": "Keep coins ready; the boatman collects mid-crossing.",
+          "fields": [
+            {
+              "label": "Fare",
+              "value": "AED 1 per crossing"
+            }
+          ],
+          "lat": 25.2627,
+          "lng": 55.2961,
+          "photos": [
+            {
+              "url": "/static/seed/dubai-creek-abra.jpg",
+              "width": 1280,
+              "height": 960,
+              "caption": "Dubai Creek Abra",
+              "credit": {
+                "author": "CT Cooper",
+                "license": "Public domain",
+                "source": "https://commons.wikimedia.org/wiki/File:Dubai_Creek_from_an_abra_3.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_dubai_budget_s3",
+          "name": "Gold Souk & Spice Souk",
+          "day": 1,
+          "story": "Window-shopping at the Gold Souk, then the Spice Souk next door, where we actually spent — saffron, dried limes, frankincense.",
+          "tip": "Bargain: start at half the first price.",
+          "fields": [
+            {
+              "label": "Bargaining",
+              "value": "Expected"
+            }
+          ],
+          "lat": 25.26998,
+          "lng": 55.29812,
+          "photos": [
+            {
+              "url": "/static/seed/gold-souk-spice-souk.jpg",
+              "width": 1280,
+              "height": 785,
+              "caption": "Gold Souk & Spice Souk",
+              "credit": {
+                "author": "Imre Solt",
+                "license": "CC BY-SA 3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Dubai_Gold_Souk_on_31_May_2007_Pict_1.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_dubai_budget_s4",
+          "name": "Burj Khalifa & Dubai Fountain",
+          "day": 2,
+          "story": "The fountain show every 30 minutes is free. We saved our splurge for At the Top at sunset.",
+          "tip": "Book At the Top online — it’s cheaper than at the counter.",
+          "fields": [
+            {
+              "label": "Fountain shows",
+              "value": "Every 30 min from 6 pm, free"
+            }
+          ],
+          "lat": 25.19703,
+          "lng": 55.27413,
+          "photos": [
+            {
+              "url": "/static/seed/burj-khalifa-dubai-fountain.jpg",
+              "width": 1280,
+              "height": 720,
+              "caption": "Burj Khalifa & Dubai Fountain",
+              "credit": {
+                "author": "Christian Raggini",
+                "license": "CC0",
+                "source": "https://commons.wikimedia.org/wiki/File:The_Dubai_Fountain_%26_Burj_Khalifa_Pixabay.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_dubai_budget_s5",
+          "name": "JBR Beach",
+          "day": 2,
+          "story": "A free public beach with showers. We ended with our toes in the water and the giant wheel lighting up.",
+          "tip": "Sunset is busy; walk south for quieter sand.",
+          "fields": [],
+          "lat": 25.07919,
+          "lng": 55.13549,
+          "photos": [
+            {
+              "url": "/static/seed/jbr-beach.jpg",
+              "width": 1280,
+              "height": 853,
+              "caption": "JBR Beach",
+              "credit": {
+                "author": "pe-sa",
+                "license": "CC BY 3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Dubai_Jumeirah_Beach.JPG"
+              }
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-09-28T08:30:00.000Z",
+      "coverPhoto": {
+        "url": "/static/seed/burj-khalifa-dubai-fountain.jpg",
+        "width": 1280,
+        "height": 720,
+        "caption": "Burj Khalifa & Dubai Fountain",
+        "credit": {
+          "author": "Christian Raggini",
+          "license": "CC0",
+          "source": "https://commons.wikimedia.org/wiki/File:The_Dubai_Fountain_%26_Burj_Khalifa_Pixabay.jpg"
+        }
+      },
+      "budget": [
+        {
+          "category": "stay",
+          "label": "Budget hotel in Deira, 1 night",
+          "amount": 200
+        },
+        {
+          "category": "activities",
+          "label": "Coffee Museum (2)",
+          "amount": 30,
+          "stopId": "j_dubai_budget_s1"
+        },
+        {
+          "category": "food",
+          "label": "Karak chai and breakfast",
+          "amount": 40,
+          "stopId": "j_dubai_budget_s1"
+        },
+        {
+          "category": "transport",
+          "label": "Abra rides ×6",
+          "amount": 6,
+          "stopId": "j_dubai_budget_s2"
+        },
+        {
+          "category": "other",
+          "label": "Saffron and spices",
+          "amount": 85,
+          "stopId": "j_dubai_budget_s3"
+        },
+        {
+          "category": "food",
+          "label": "Shawarma dinner in Deira",
+          "amount": 45,
+          "stopId": "j_dubai_budget_s3"
+        },
+        {
+          "category": "activities",
+          "label": "At the Top tickets (2)",
+          "amount": 338,
+          "stopId": "j_dubai_budget_s4"
+        },
+        {
+          "category": "transport",
+          "label": "Metro day passes",
+          "amount": 44,
+          "stopId": "j_dubai_budget_s4"
+        },
+        {
+          "category": "food",
+          "label": "Food-court lunch",
+          "amount": 70,
+          "stopId": "j_dubai_budget_s4"
+        },
+        {
+          "category": "food",
+          "label": "Ice cream and fresh juice",
+          "amount": 35,
+          "stopId": "j_dubai_budget_s5"
+        }
+      ]
+    },
+    {
+      "id": "j_abudhabi_culture",
+      "creatorId": "c_lena",
+      "title": "Abu Dhabi, Slowly",
+      "dek": "Two unhurried days between the Grand Mosque at golden hour, the Louvre’s rain of light and a sunset ride on the Corniche.",
+      "region": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "currency": "AED",
+      "tags": [
+        "culture",
+        "city",
+        "solo"
+      ],
+      "bestMonths": [
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "durationDays": 2,
+      "travelers": 1,
+      "going": 96,
+      "likes": 1120,
+      "pullQuote": "Under the Louvre’s dome the light falls like rain through palm leaves. I sat there for an hour.",
+      "story": "Abu Dhabi rewards slowness. Most of the best things here are free or close to it, the buses are good, and nobody hurries you.",
+      "fields": [
+        {
+          "label": "Dress code",
+          "value": "Modest clothing for the mosque; abayas lent free"
+        },
+        {
+          "label": "Getting around",
+          "value": "Hafilat bus card"
+        }
+      ],
+      "stops": [
+        {
+          "id": "j_abudhabi_culture_s1",
+          "name": "Sheikh Zayed Grand Mosque",
+          "day": 1,
+          "story": "Free entry, booked online. Go for the last hour of daylight: the white marble turns gold, then blue.",
+          "tip": "Book the free slot a day ahead; walk-ins wait.",
+          "fields": [
+            {
+              "label": "Entry fee",
+              "value": "Free (book online)"
+            }
+          ],
+          "lat": 24.41245,
+          "lng": 54.47427,
+          "photos": [
+            {
+              "url": "/static/seed/sheikh-zayed-grand-mosque.jpg",
+              "width": 1280,
+              "height": 1920,
+              "caption": "Sheikh Zayed Grand Mosque",
+              "credit": {
+                "author": "Francesco Bini",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Abu_dhabi,_Moschea_dello_Sceicco_Zayed,_loggiati,_2.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_abudhabi_culture_s2",
+          "name": "Louvre Abu Dhabi",
+          "day": 1,
+          "story": "The building is the exhibit: a floating dome that throws spots of light everywhere. The galleries walk you through world history in one loop.",
+          "fields": [],
+          "lat": 24.53368,
+          "lng": 54.39861,
+          "photos": [
+            {
+              "url": "/static/seed/louvre-abu-dhabi.jpg",
+              "width": 1280,
+              "height": 995,
+              "caption": "Louvre Abu Dhabi",
+              "credit": {
+                "author": "Boubloub",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:LouvreAD_platforms.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_abudhabi_culture_s3",
+          "name": "Qasr Al Watan",
+          "day": 2,
+          "story": "The presidential palace is open to visitors and absurdly grand — the library alone is worth it.",
+          "fields": [],
+          "lat": 24.45627,
+          "lng": 54.31157,
+          "photos": [
+            {
+              "url": "/static/seed/qasr-al-watan.jpg",
+              "width": 1280,
+              "height": 853,
+              "caption": "Qasr Al Watan",
+              "credit": {
+                "author": "Matti Blume",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Qasr_Al_Watan,_Abu_Dhabi_(P1100960).jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_abudhabi_culture_s4",
+          "name": "Abu Dhabi Corniche",
+          "day": 2,
+          "story": "Eight kilometres of promenade. Rent a bike, stop at the public beach, finish at the breakwater for sunset.",
+          "tip": "Bike docks every few hundred metres.",
+          "fields": [],
+          "lat": 24.47419,
+          "lng": 54.34019,
+          "photos": [
+            {
+              "url": "/static/seed/abu-dhabi-corniche.jpg",
+              "width": 1280,
+              "height": 853,
+              "caption": "Abu Dhabi Corniche",
+              "credit": {
+                "author": "Sabithnav",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Abu_Dhabi_skyline_-_corniche_2.jpg"
+              }
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-09-12T10:00:00.000Z",
+      "coverPhoto": {
+        "url": "/static/seed/sheikh-zayed-grand-mosque.jpg",
+        "width": 1280,
+        "height": 1920,
+        "caption": "Sheikh Zayed Grand Mosque",
+        "credit": {
+          "author": "Francesco Bini",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Abu_dhabi,_Moschea_dello_Sceicco_Zayed,_loggiati,_2.jpg"
+        }
+      },
+      "budget": [
+        {
+          "category": "stay",
+          "label": "Hotel near the Corniche, 1 night",
+          "amount": 260
+        },
+        {
+          "category": "transport",
+          "label": "Bus and Hafilat card",
+          "amount": 14,
+          "stopId": "j_abudhabi_culture_s1"
+        },
+        {
+          "category": "activities",
+          "label": "Museum ticket",
+          "amount": 63,
+          "stopId": "j_abudhabi_culture_s2"
+        },
+        {
+          "category": "food",
+          "label": "Lunch at the museum café",
+          "amount": 65,
+          "stopId": "j_abudhabi_culture_s2"
+        },
+        {
+          "category": "activities",
+          "label": "Palace ticket",
+          "amount": 65,
+          "stopId": "j_abudhabi_culture_s3"
+        },
+        {
+          "category": "activities",
+          "label": "Bike rental, 2 hours",
+          "amount": 20,
+          "stopId": "j_abudhabi_culture_s4"
+        },
+        {
+          "category": "food",
+          "label": "Dinner at the fish market",
+          "amount": 55,
+          "stopId": "j_abudhabi_culture_s4"
+        }
+      ]
+    },
+    {
+      "id": "j_rak_jebel_jais",
+      "creatorId": "c_omar",
+      "title": "Jebel Jais: The UAE’s Rooftop",
+      "dek": "Zipline the world’s longest, sleep in the mountains at 1,900 m, and drive the hairpins down to a sea-front fort at dawn.",
+      "region": "Ras Al Khaimah",
+      "country": "United Arab Emirates",
+      "currency": "AED",
+      "tags": [
+        "mountains",
+        "adventure",
+        "couples"
+      ],
+      "bestMonths": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "durationDays": 2,
+      "travelers": 2,
+      "going": 341,
+      "likes": 2410,
+      "pullQuote": "At the top of Jebel Jais it was 14°C. Dubai, ninety minutes away, was 34.",
+      "story": "Ras Al Khaimah is the UAE’s surprise. Ninety minutes from Dubai you climb a road of hairpins into cool air, eagles and silence.",
+      "fields": [
+        {
+          "label": "Temperature",
+          "value": "10–15°C cooler than the coast; bring a jacket"
+        },
+        {
+          "label": "Drive from Dubai",
+          "value": "1 h 30 min"
+        }
+      ],
+      "stops": [
+        {
+          "id": "j_rak_jebel_jais_s1",
+          "name": "Jebel Jais Viewing Deck",
+          "day": 1,
+          "story": "Pull over at the viewing deck for the first look down the wadis. The wind up here is serious.",
+          "fields": [],
+          "lat": 25.84675,
+          "lng": 56.09867,
+          "photos": [
+            {
+              "url": "/static/seed/jebel-jais-viewing-deck.jpg",
+              "width": 1280,
+              "height": 669,
+              "caption": "Jebel Jais Viewing Deck",
+              "credit": {
+                "author": "Clintonrebeiro",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Sunrise_on_the_Jebel_Jais_Mountain_on_a_Chilly_Winter_Morning.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_rak_jebel_jais_s2",
+          "name": "Jais Flight Zipline",
+          "day": 1,
+          "story": "Nearly 3 km at up to 150 km/h, face-down like a falcon. Terrifying for ten seconds, then the best two minutes of the trip.",
+          "tip": "Weekends sell out — book a week ahead.",
+          "fields": [
+            {
+              "label": "Minimum weight",
+              "value": "45 kg"
+            },
+            {
+              "label": "Book ahead",
+              "value": "Yes"
+            }
+          ],
+          "lat": 25.9472,
+          "lng": 56.14044,
+          "photos": [
+            {
+              "url": "/static/seed/jais-flight-zipline.jpg",
+              "width": 1280,
+              "height": 720,
+              "caption": "Jais Flight Zipline",
+              "credit": {
+                "author": "IbrahimKumar",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:View_of_the_top_of_Jabal_Bil_Ays_-_Jebel_Jais_and_its_southern_slope.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_rak_jebel_jais_s3",
+          "name": "Mountain cabin, Jebel Jais",
+          "day": 1,
+          "story": "We slept in a cabin up the mountain and cooked over a fire. Stars like you never see in the city.",
+          "fields": [],
+          "lat": 25.84675,
+          "lng": 56.09867,
+          "photos": [
+            {
+              "url": "/static/seed/mountain-cabin-jebel-jais.jpg",
+              "width": 1280,
+              "height": 853,
+              "caption": "Mountain cabin, Jebel Jais",
+              "credit": {
+                "author": "Tashmetova808",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:View_of_the_mountains,_Jebel_Jais,_Ras_al_Khaimah,_UAE.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_rak_jebel_jais_s4",
+          "name": "Dhayah Fort",
+          "day": 2,
+          "story": "A short, steep climb to a mud-brick fort over palm groves and the sea. Go at sunrise on the way down.",
+          "fields": [
+            {
+              "label": "Entry fee",
+              "value": "Free"
+            }
+          ],
+          "lat": 25.88434,
+          "lng": 56.06064,
+          "photos": [
+            {
+              "url": "/static/seed/dhayah-fort.jpg",
+              "width": 1280,
+              "height": 853,
+              "caption": "Dhayah Fort",
+              "credit": {
+                "author": "Ansari M Joshi",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Dahyah_Fort_Sunset.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_rak_jebel_jais_s5",
+          "name": "Al Marjan Island",
+          "day": 2,
+          "story": "Breakfast with our feet in the sand before the drive home.",
+          "fields": [],
+          "lat": 25.68106,
+          "lng": 55.74326,
+          "photos": [
+            {
+              "url": "/static/seed/al-marjan-island.jpg",
+              "width": 1280,
+              "height": 816,
+              "caption": "Al Marjan Island",
+              "credit": {
+                "author": "almarjanisland.com",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Aerial_View_Al_Marjan_Island.jpg"
+              }
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-02T06:00:00.000Z",
+      "coverPhoto": {
+        "url": "/static/seed/jebel-jais-viewing-deck.jpg",
+        "width": 1280,
+        "height": 669,
+        "caption": "Jebel Jais Viewing Deck",
+        "credit": {
+          "author": "Clintonrebeiro",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Sunrise_on_the_Jebel_Jais_Mountain_on_a_Chilly_Winter_Morning.jpg"
+        }
+      },
+      "budget": [
+        {
+          "category": "transport",
+          "label": "Fuel, round trip",
+          "amount": 120,
+          "stopId": "j_rak_jebel_jais_s1"
+        },
+        {
+          "category": "food",
+          "label": "Snacks and tea",
+          "amount": 30,
+          "stopId": "j_rak_jebel_jais_s1"
+        },
+        {
+          "category": "activities",
+          "label": "Jais Flight ×2",
+          "amount": 700,
+          "stopId": "j_rak_jebel_jais_s2"
+        },
+        {
+          "category": "stay",
+          "label": "Cabin, 1 night",
+          "amount": 650,
+          "stopId": "j_rak_jebel_jais_s3"
+        },
+        {
+          "category": "food",
+          "label": "Beach breakfast",
+          "amount": 95,
+          "stopId": "j_rak_jebel_jais_s5"
+        }
+      ]
+    },
+    {
+      "id": "j_hatta",
+      "creatorId": "c_sara",
+      "title": "Hatta for Under AED 400",
+      "dek": "Turquoise dam water, a kayak, a bike trail and a village from the 1800s — on a nurse’s budget.",
+      "region": "Hatta",
+      "country": "United Arab Emirates",
+      "currency": "AED",
+      "tags": [
+        "mountains",
+        "adventure",
+        "budget",
+        "day trip",
+        "friends"
+      ],
+      "bestMonths": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "durationDays": 1,
+      "travelers": 2,
+      "going": 268,
+      "likes": 1990,
+      "pullQuote": "The dam is the colour of a cartoon swimming pool, surrounded by bare brown mountains.",
+      "story": "We left Sharjah at 6, were kayaking by 8 and home for dinner. Hatta is the easiest mountain escape in the UAE.",
+      "fields": [
+        {
+          "label": "Drive from Dubai",
+          "value": "1 h 15 min"
+        },
+        {
+          "label": "Bring",
+          "value": "Water shoes, sunscreen, cash for the honey stalls"
+        }
+      ],
+      "stops": [
+        {
+          "id": "j_hatta_s1",
+          "name": "Hatta Dam",
+          "day": 1,
+          "story": "Rent a kayak or a pedal boat. The water is impossibly turquoise against the Hajar mountains.",
+          "tip": "Kayaks run out by 10 am on Fridays.",
+          "fields": [],
+          "lat": 24.78363,
+          "lng": 56.11449,
+          "photos": [
+            {
+              "url": "/static/seed/hatta-dam.jpg",
+              "width": 1280,
+              "height": 960,
+              "caption": "Hatta Dam",
+              "credit": {
+                "author": "Chrome231",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Hatta_Dam_Kayaking.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_hatta_s2",
+          "name": "Hatta Wadi Hub",
+          "day": 1,
+          "story": "Trails, a zipline and a giant slide down the hill. We did the easy bike loop and called it a workout.",
+          "fields": [],
+          "lat": 24.81398,
+          "lng": 56.15986,
+          "photos": [
+            {
+              "url": "/static/seed/hatta-wadi-hub.jpg",
+              "width": 1280,
+              "height": 960,
+              "caption": "Hatta Wadi Hub",
+              "credit": {
+                "author": "GMarcury",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Hatta_Mountains_Sunset.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_hatta_s3",
+          "name": "Hatta Heritage Village",
+          "day": 1,
+          "story": "Mud-brick houses, a falaj water channel and watchtowers. Free, and almost empty on a weekday.",
+          "fields": [
+            {
+              "label": "Entry fee",
+              "value": "Free"
+            }
+          ],
+          "lat": 24.79592,
+          "lng": 56.11918,
+          "photos": [
+            {
+              "url": "/static/seed/hatta-heritage-village.jpg",
+              "width": 1280,
+              "height": 959,
+              "caption": "Hatta Heritage Village",
+              "credit": {
+                "author": "GMarcury",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Hatta_Heritage_Village_10.12.23.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_hatta_s4",
+          "name": "Hatta Honey Bee Garden",
+          "day": 1,
+          "story": "Taste local honeys straight from the comb; the sidr honey is liquid gold.",
+          "fields": [],
+          "lat": 24.79756,
+          "lng": 56.12064,
+          "photos": [
+            {
+              "url": "/static/seed/hatta-honey-bee-garden.jpg",
+              "width": 1280,
+              "height": 960,
+              "caption": "Hatta Honey Bee Garden",
+              "credit": {
+                "author": "Yoge2301",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Hatta_Village_view_UAE.jpg"
+              }
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-09-20T05:00:00.000Z",
+      "coverPhoto": {
+        "url": "/static/seed/hatta-dam.jpg",
+        "width": 1280,
+        "height": 960,
+        "caption": "Hatta Dam",
+        "credit": {
+          "author": "Chrome231",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Hatta_Dam_Kayaking.jpg"
+        }
+      },
+      "budget": [
+        {
+          "category": "activities",
+          "label": "Kayak, 1 hour (2 people)",
+          "amount": 120,
+          "stopId": "j_hatta_s1"
+        },
+        {
+          "category": "transport",
+          "label": "Fuel",
+          "amount": 70,
+          "stopId": "j_hatta_s1"
+        },
+        {
+          "category": "activities",
+          "label": "Bike rental",
+          "amount": 60,
+          "stopId": "j_hatta_s2"
+        },
+        {
+          "category": "food",
+          "label": "Honey tasting and lunch",
+          "amount": 110,
+          "stopId": "j_hatta_s4"
+        }
+      ]
+    },
+    {
+      "id": "j_liwa_desert",
+      "creatorId": "c_priya",
+      "title": "A Night in the Empty Quarter",
+      "dek": "Moreeb Dune at sunset, a tent among red sand, and the silence of the Rub’ al Khali.",
+      "region": "Liwa",
+      "country": "United Arab Emirates",
+      "currency": "AED",
+      "tags": [
+        "desert",
+        "couples",
+        "adventure"
+      ],
+      "bestMonths": [
+        11,
+        12,
+        1,
+        2
+      ],
+      "durationDays": 2,
+      "travelers": 2,
+      "going": 187,
+      "likes": 2240,
+      "pullQuote": "There is no sound in the Empty Quarter at night. We could hear each other blink.",
+      "story": "Liwa is four hours from Dubai and feels like another planet. These are the tallest dunes in the country — orange at dawn, red at dusk.",
+      "fields": [
+        {
+          "label": "Car",
+          "value": "A normal car is fine on the roads; never drive on sand without a 4x4"
+        },
+        {
+          "label": "Drive from Dubai",
+          "value": "3 h 45 min"
+        }
+      ],
+      "stops": [
+        {
+          "id": "j_liwa_desert_s1",
+          "name": "Liwa Oasis",
+          "day": 1,
+          "story": "A crescent of date farms along the edge of the dunes. Stop at a roadside stall for fresh dates and coffee.",
+          "fields": [],
+          "lat": 23.129,
+          "lng": 53.778,
+          "photos": [
+            {
+              "url": "/static/seed/liwa-oasis.jpg",
+              "width": 1280,
+              "height": 851,
+              "caption": "Liwa Oasis",
+              "credit": {
+                "author": "ShiluGeo1PU",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Liwa_desert.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_liwa_desert_s2",
+          "name": "Moreeb Dune",
+          "day": 1,
+          "story": "Three hundred metres of sand rising like a wall. We climbed halfway and watched the sunset from there.",
+          "fields": [
+            {
+              "label": "Best time",
+              "value": "Sunset"
+            }
+          ],
+          "lat": 22.9805,
+          "lng": 53.78659,
+          "photos": [
+            {
+              "url": "/static/seed/moreeb-dune.jpg",
+              "width": 1280,
+              "height": 854,
+              "caption": "Moreeb Dune",
+              "credit": {
+                "author": "DMPenAd",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Liwa_Sports_Club_Car_Sand_Race_in_Liwa_International_Festival_2022.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_liwa_desert_s3",
+          "name": "Qasr Al Sarab",
+          "day": 1,
+          "story": "We couldn’t afford a night at the palace resort, so we camped nearby and came here for one very fancy dinner.",
+          "fields": [],
+          "lat": 22.90035,
+          "lng": 54.33633,
+          "photos": [
+            {
+              "url": "/static/seed/qasr-al-sarab.jpg",
+              "width": 1280,
+              "height": 794,
+              "caption": "Qasr Al Sarab",
+              "credit": {
+                "author": "Steven Sun",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Desert_near_Qasr_Al-Sarab.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_liwa_desert_s4",
+          "name": "Mezaira’a",
+          "day": 2,
+          "story": "Breakfast in the main town and a slow drive home through the dunes.",
+          "fields": [],
+          "lat": 23.13891,
+          "lng": 53.78048,
+          "photos": [
+            {
+              "url": "/static/seed/mezaira-a.jpg",
+              "width": 1280,
+              "height": 853,
+              "caption": "Mezaira’a",
+              "credit": {
+                "author": "JSPhotography2016",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Liwa_Desert_Dune.jpg"
+              }
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-08-30T07:00:00.000Z",
+      "coverPhoto": {
+        "url": "/static/seed/moreeb-dune.jpg",
+        "width": 1280,
+        "height": 854,
+        "caption": "Moreeb Dune",
+        "credit": {
+          "author": "DMPenAd",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Liwa_Sports_Club_Car_Sand_Race_in_Liwa_International_Festival_2022.jpg"
+        }
+      },
+      "budget": [
+        {
+          "category": "food",
+          "label": "Dates and gahwa",
+          "amount": 40,
+          "stopId": "j_liwa_desert_s1"
+        },
+        {
+          "category": "transport",
+          "label": "Fuel, round trip",
+          "amount": 220,
+          "stopId": "j_liwa_desert_s1"
+        },
+        {
+          "category": "stay",
+          "label": "Desert camp tent, 1 night",
+          "amount": 550,
+          "stopId": "j_liwa_desert_s3"
+        },
+        {
+          "category": "food",
+          "label": "Dinner at Qasr Al Sarab",
+          "amount": 480,
+          "stopId": "j_liwa_desert_s3"
+        },
+        {
+          "category": "food",
+          "label": "Breakfast",
+          "amount": 60,
+          "stopId": "j_liwa_desert_s4"
+        }
+      ]
+    },
+    {
+      "id": "j_east_coast",
+      "creatorId": "c_rohan",
+      "title": "The East Coast: Snoopy Island & Khor Fakkan",
+      "dek": "Snorkelling with turtles, the UAE’s oldest mosque, and a corniche where the mountains meet the sea.",
+      "region": "Fujairah",
+      "country": "United Arab Emirates",
+      "currency": "AED",
+      "tags": [
+        "beach",
+        "family",
+        "budget",
+        "culture"
+      ],
+      "bestMonths": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "durationDays": 2,
+      "travelers": 4,
+      "going": 152,
+      "likes": 1460,
+      "pullQuote": "Snorkelling off Snoopy Island, a turtle swam past my daughter’s mask. She hasn’t stopped talking about it.",
+      "story": "Our family’s favourite long weekend. The east coast has mountains running straight into a calm sea, at half the price of the west.",
+      "fields": [
+        {
+          "label": "Drive from Dubai",
+          "value": "1 h 45 min"
+        },
+        {
+          "label": "Kids",
+          "value": "Calm, shallow water — great for children"
+        }
+      ],
+      "stops": [
+        {
+          "id": "j_east_coast_s1",
+          "name": "Al Bidya Mosque",
+          "day": 1,
+          "story": "The oldest mosque in the UAE: small, mud-walled, with watchtowers on the hill behind.",
+          "fields": [
+            {
+              "label": "Entry fee",
+              "value": "Free"
+            }
+          ],
+          "lat": 25.43906,
+          "lng": 56.35341,
+          "photos": [
+            {
+              "url": "/static/seed/al-bidya-mosque.jpg",
+              "width": 1280,
+              "height": 850,
+              "caption": "Al Bidya Mosque",
+              "credit": {
+                "author": "Stzeman",
+                "license": "CC BY-SA 3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Al_Bidya-mosque.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_east_coast_s2",
+          "name": "Snoopy Island",
+          "day": 1,
+          "story": "Rent snorkel gear on the beach and swim out — reef fish, sometimes turtles and baby sharks.",
+          "tip": "Go early; the water is clearest before noon.",
+          "fields": [],
+          "lat": 25.4926,
+          "lng": 56.36352,
+          "photos": [
+            {
+              "url": "/static/seed/snoopy-island.jpg",
+              "width": 1280,
+              "height": 960,
+              "caption": "Snoopy Island",
+              "credit": {
+                "author": "Wongleejean",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Pristine_blue_waters_of_Snoopy_Island.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_east_coast_s3",
+          "name": "Fujairah Fort",
+          "day": 2,
+          "story": "A centuries-old fort being restored, with a small heritage village next door.",
+          "fields": [],
+          "lat": 25.13858,
+          "lng": 56.33714,
+          "photos": [
+            {
+              "url": "/static/seed/fujairah-fort.jpg",
+              "width": 1280,
+              "height": 851,
+              "caption": "Fujairah Fort",
+              "credit": {
+                "author": "Mike Che",
+                "license": "CC BY-SA 3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Fujairah_Fort_Side_View,_Fujairah,_UAE.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_east_coast_s4",
+          "name": "Khor Fakkan Beach",
+          "day": 2,
+          "story": "A long corniche with mountains behind it. The new waterfall park is free and the kids ran around until sunset.",
+          "fields": [],
+          "lat": 25.34917,
+          "lng": 56.34781,
+          "photos": [
+            {
+              "url": "/static/seed/khor-fakkan-beach.jpg",
+              "width": 1280,
+              "height": 853,
+              "caption": "Khor Fakkan Beach",
+              "credit": {
+                "author": "Dalislema",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:KhorFakkan.jpg"
+              }
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-09-05T09:00:00.000Z",
+      "coverPhoto": {
+        "url": "/static/seed/snoopy-island.jpg",
+        "width": 1280,
+        "height": 960,
+        "caption": "Snoopy Island",
+        "credit": {
+          "author": "Wongleejean",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Pristine_blue_waters_of_Snoopy_Island.jpg"
+        }
+      },
+      "budget": [
+        {
+          "category": "activities",
+          "label": "Snorkel gear for 4",
+          "amount": 160,
+          "stopId": "j_east_coast_s2"
+        },
+        {
+          "category": "stay",
+          "label": "Beach hotel family room, 1 night",
+          "amount": 520,
+          "stopId": "j_east_coast_s2"
+        },
+        {
+          "category": "food",
+          "label": "Mandi lunch for 4",
+          "amount": 120,
+          "stopId": "j_east_coast_s3"
+        },
+        {
+          "category": "transport",
+          "label": "Fuel",
+          "amount": 140,
+          "stopId": "j_east_coast_s4"
+        },
+        {
+          "category": "food",
+          "label": "Ice cream",
+          "amount": 30,
+          "stopId": "j_east_coast_s4"
+        }
+      ]
+    },
+    {
+      "id": "j_musandam",
+      "creatorId": "c_omar",
+      "title": "Musandam: Arabia’s Fjords by Dhow",
+      "dek": "A wooden dhow through mountain fjords, dolphins off the bow, and a swim at Telegraph Island.",
+      "region": "Musandam",
+      "country": "Oman",
+      "currency": "AED",
+      "tags": [
+        "beach",
+        "adventure",
+        "friends"
+      ],
+      "bestMonths": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4
+      ],
+      "durationDays": 2,
+      "travelers": 4,
+      "going": 233,
+      "likes": 2050,
+      "pullQuote": "Dolphins raced the dhow for ten minutes. Nobody on board said a word.",
+      "story": "Musandam is Oman’s northern tip, wrapped around the Strait of Hormuz. Cross the border at Tibat and you’re among cliffs plunging into blue water.",
+      "fields": [
+        {
+          "label": "Border",
+          "value": "Oman border visa — check your passport"
+        },
+        {
+          "label": "Drive from Dubai",
+          "value": "2 h 30 min to Khasab"
+        }
+      ],
+      "stops": [
+        {
+          "id": "j_musandam_s1",
+          "name": "Khasab",
+          "day": 1,
+          "story": "A sleepy port town; the harbour full of dhows is the real sight.",
+          "fields": [],
+          "lat": 26.18413,
+          "lng": 56.24698,
+          "photos": [
+            {
+              "url": "/static/seed/khasab.jpg",
+              "width": 1280,
+              "height": 960,
+              "caption": "Khasab",
+              "credit": {
+                "author": "Toppazz",
+                "license": "CC BY 3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Dhow_Cruise,_Khasab,_Oman_-_panoramio_(1).jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_musandam_s2",
+          "name": "Khor Ash Sham",
+          "day": 1,
+          "story": "The longest fjord. Our dhow cruised it for hours, past fishing villages you can only reach by boat.",
+          "fields": [],
+          "lat": 26.205,
+          "lng": 56.28,
+          "photos": [
+            {
+              "url": "/static/seed/khor-ash-sham.jpg",
+              "width": 1280,
+              "height": 691,
+              "caption": "Khor Ash Sham",
+              "credit": {
+                "author": "Robert Haandrikman",
+                "license": "CC BY 2.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Dhow_trip_in_the_fjords_of_Musandam,_Oman_(36208102524).jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_musandam_s3",
+          "name": "Telegraph Island",
+          "day": 1,
+          "story": "A tiny island with the ruins of an 1860s British telegraph station. We jumped off the dhow and swam around it.",
+          "fields": [
+            {
+              "label": "Bring",
+              "value": "Swimsuit and reef shoes"
+            }
+          ],
+          "lat": 26.19557,
+          "lng": 56.34295,
+          "photos": [
+            {
+              "url": "/static/seed/telegraph-island.jpg",
+              "width": 1280,
+              "height": 960,
+              "caption": "Telegraph Island",
+              "credit": {
+                "author": "Jc8136",
+                "license": "CC BY-SA 3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Telegraph_Island_Musandam.JPG"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_musandam_s4",
+          "name": "Khasab Castle",
+          "day": 2,
+          "story": "A 17th-century fort with a good little museum, then seafood by the water.",
+          "fields": [],
+          "lat": 26.192,
+          "lng": 56.243,
+          "photos": [
+            {
+              "url": "/static/seed/khasab-castle.jpg",
+              "width": 1280,
+              "height": 960,
+              "caption": "Khasab Castle",
+              "credit": {
+                "author": "Jc8136",
+                "license": "CC BY-SA 3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Khasab_Castle_view.JPG"
+              }
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-07-18T08:00:00.000Z",
+      "coverPhoto": {
+        "url": "/static/seed/khor-ash-sham.jpg",
+        "width": 1280,
+        "height": 691,
+        "caption": "Khor Ash Sham",
+        "credit": {
+          "author": "Robert Haandrikman",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Dhow_trip_in_the_fjords_of_Musandam,_Oman_(36208102524).jpg"
+        }
+      },
+      "budget": [
+        {
+          "category": "transport",
+          "label": "Fuel and border fees",
+          "amount": 260,
+          "stopId": "j_musandam_s1"
+        },
+        {
+          "category": "stay",
+          "label": "Guesthouse, 2 rooms, 1 night",
+          "amount": 600,
+          "stopId": "j_musandam_s1"
+        },
+        {
+          "category": "activities",
+          "label": "Full-day dhow cruise ×4",
+          "amount": 800,
+          "stopId": "j_musandam_s2"
+        },
+        {
+          "category": "activities",
+          "label": "Castle entry ×4",
+          "amount": 40,
+          "stopId": "j_musandam_s4"
+        },
+        {
+          "category": "food",
+          "label": "Seafood lunch ×4",
+          "amount": 180,
+          "stopId": "j_musandam_s4"
+        }
+      ]
+    },
+    {
+      "id": "j_muscat",
+      "creatorId": "c_sara",
+      "title": "Muscat & Wadi Shab on a Shoestring",
+      "dek": "Swim through a cave to a hidden waterfall, wander Mutrah Souq, and stare into the Bimmah Sinkhole.",
+      "region": "Muscat",
+      "country": "Oman",
+      "currency": "OMR",
+      "tags": [
+        "culture",
+        "adventure",
+        "beach",
+        "budget"
+      ],
+      "bestMonths": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "durationDays": 3,
+      "travelers": 2,
+      "going": 175,
+      "likes": 1680,
+      "pullQuote": "To reach the waterfall in Wadi Shab you swim through a gap in the rock barely wider than your head.",
+      "story": "We flew Sharjah–Muscat on a budget airline and rented the smallest car available. Oman is cheaper than it looks if you eat local and sleep simple.",
+      "fields": [
+        {
+          "label": "Visa",
+          "value": "eVisa or visa-free for many — check before booking"
+        },
+        {
+          "label": "Car hire",
+          "value": "From OMR 12 a day"
+        }
+      ],
+      "stops": [
+        {
+          "id": "j_muscat_s1",
+          "name": "Sultan Qaboos Grand Mosque",
+          "day": 1,
+          "story": "One of the largest chandeliers in the world, over a hand-woven carpet the size of a football pitch.",
+          "fields": [
+            {
+              "label": "Visiting hours",
+              "value": "Non-Muslim visitors 8–11 am, Sat–Thu"
+            }
+          ],
+          "lat": 23.58379,
+          "lng": 58.38852,
+          "photos": [
+            {
+              "url": "/static/seed/sultan-qaboos-grand-mosque.jpg",
+              "width": 1280,
+              "height": 853,
+              "caption": "Sultan Qaboos Grand Mosque",
+              "credit": {
+                "author": "Mostafameraji",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Sultan_Qaboos_Grand_Mosque_(1).jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_muscat_s2",
+          "name": "Mutrah Souq",
+          "day": 1,
+          "story": "Frankincense smoke, silver khanjars and the best halwa we’ve had. Walk the corniche to the fort at dusk.",
+          "fields": [],
+          "lat": 23.61899,
+          "lng": 58.56381,
+          "photos": [
+            {
+              "url": "/static/seed/mutrah-souq.jpg",
+              "width": 1280,
+              "height": 853,
+              "caption": "Mutrah Souq",
+              "credit": {
+                "author": "Dr. Thomas Liptak",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Oman,_Muscat,_Mutrah_Souq,_Kuma.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_muscat_s3",
+          "name": "Bimmah Sinkhole",
+          "day": 2,
+          "story": "A turquoise pool inside a collapsed limestone cave, with tiny fish that nibble your toes.",
+          "fields": [
+            {
+              "label": "Entry fee",
+              "value": "Free"
+            }
+          ],
+          "lat": 23.036,
+          "lng": 59.071,
+          "photos": [
+            {
+              "url": "/static/seed/bimmah-sinkhole.jpg",
+              "width": 1280,
+              "height": 960,
+              "caption": "Bimmah Sinkhole",
+              "credit": {
+                "author": "Wusel007",
+                "license": "CC BY-SA 3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Hawiyat_Najm_Dabab_Sinkhole_1.JPG"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_muscat_s4",
+          "name": "Wadi Shab",
+          "day": 2,
+          "story": "A short boat across, a 45-minute hike, then swim through pools to the cave with the waterfall inside.",
+          "tip": "Waterproof phone pouch — you will be swimming.",
+          "fields": [],
+          "lat": 22.8178,
+          "lng": 59.18214,
+          "photos": [
+            {
+              "url": "/static/seed/wadi-shab.jpg",
+              "width": 1280,
+              "height": 851,
+              "caption": "Wadi Shab",
+              "credit": {
+                "author": "albinfo",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Wadi_Shab_3.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_muscat_s5",
+          "name": "Ras al Jinz",
+          "day": 3,
+          "story": "Green turtles come ashore to nest at night. Watching a hatchling run for the sea is something we’ll never forget.",
+          "fields": [],
+          "lat": 22.41883,
+          "lng": 59.83001,
+          "photos": [
+            {
+              "url": "/static/seed/ras-al-jinz.jpg",
+              "width": 1280,
+              "height": 960,
+              "caption": "Ras al Jinz",
+              "credit": {
+                "author": "Kim Kash",
+                "license": "CC BY-SA 2.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Ras_Al_Jinz_turtle_reserve_(14930327261).jpg"
+              }
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-09-15T07:30:00.000Z",
+      "coverPhoto": {
+        "url": "/static/seed/wadi-shab.jpg",
+        "width": 1280,
+        "height": 851,
+        "caption": "Wadi Shab",
+        "credit": {
+          "author": "albinfo",
+          "license": "CC BY-SA 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Wadi_Shab_3.jpg"
+        }
+      },
+      "budget": [
+        {
+          "category": "transport",
+          "label": "Flights Sharjah–Muscat ×2",
+          "amount": 70
+        },
+        {
+          "category": "transport",
+          "label": "Car rental, 3 days",
+          "amount": 39,
+          "stopId": "j_muscat_s1"
+        },
+        {
+          "category": "food",
+          "label": "Shuwa and halwa",
+          "amount": 12,
+          "stopId": "j_muscat_s2"
+        },
+        {
+          "category": "other",
+          "label": "Frankincense",
+          "amount": 4,
+          "stopId": "j_muscat_s2"
+        },
+        {
+          "category": "activities",
+          "label": "Boat crossing ×2",
+          "amount": 2,
+          "stopId": "j_muscat_s4"
+        },
+        {
+          "category": "food",
+          "label": "Lunch at Tiwi",
+          "amount": 6,
+          "stopId": "j_muscat_s4"
+        },
+        {
+          "category": "activities",
+          "label": "Turtle watching ×2",
+          "amount": 20,
+          "stopId": "j_muscat_s5"
+        },
+        {
+          "category": "stay",
+          "label": "Guesthouses, 2 nights",
+          "amount": 50,
+          "stopId": "j_muscat_s5"
+        }
+      ]
+    },
+    {
+      "id": "j_georgia",
+      "creatorId": "c_priya",
+      "title": "Tbilisi & Kazbegi in Five Days",
+      "dek": "Sulphur baths, khachapuri for breakfast, and a ride up to a church in the clouds below Mount Kazbek.",
+      "region": "Tbilisi",
+      "country": "Georgia",
+      "currency": "USD",
+      "tags": [
+        "mountains",
+        "city",
+        "food",
+        "couples"
+      ],
+      "bestMonths": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "durationDays": 5,
+      "travelers": 2,
+      "going": 412,
+      "likes": 3120,
+      "pullQuote": "From the Gergeti church you look across at a glacier, and the only sound is cowbells.",
+      "story": "Georgia is the Gulf’s favourite cool-weather escape: under four hours’ flight, wine country, and mountains you can reach in a morning.",
+      "fields": [
+        {
+          "label": "Flight from Dubai",
+          "value": "≈ 3 h 45 min"
+        },
+        {
+          "label": "Visa",
+          "value": "Visa-free for many UAE residents — check yours"
+        }
+      ],
+      "stops": [
+        {
+          "id": "j_georgia_s1",
+          "name": "Old Tbilisi",
+          "day": 1,
+          "story": "Wooden balconies, the domes of the sulphur baths and a cable car up to Narikala fortress.",
+          "fields": [],
+          "lat": 41.68765,
+          "lng": 44.81148,
+          "photos": [
+            {
+              "url": "/static/seed/old-tbilisi.jpg",
+              "width": 1280,
+              "height": 853,
+              "caption": "Old Tbilisi",
+              "credit": {
+                "author": "Marcin Konsek",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:2014_Tbilisi,_%C5%81a%C5%BAnie_siarkowe_w_Abanotubani_(01).jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_georgia_s2",
+          "name": "Fabrika",
+          "day": 2,
+          "story": "A Soviet sewing factory turned courtyard of cafés. Our favourite place to eat cheap.",
+          "fields": [],
+          "lat": 41.70956,
+          "lng": 44.80278,
+          "photos": [
+            {
+              "url": "/static/seed/fabrika.jpg",
+              "width": 1280,
+              "height": 960,
+              "caption": "Fabrika",
+              "credit": {
+                "author": "Alf Altendorf",
+                "license": "CC BY-SA 2.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Fabrika_Tbilisi,_an_urban_culture_hub_in_the_capital_of_Georgia.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_georgia_s3",
+          "name": "Ananuri Fortress",
+          "day": 3,
+          "story": "A fortress-church on a turquoise reservoir, on the drive north along the old Military Road.",
+          "fields": [],
+          "lat": 42.17703,
+          "lng": 44.6906,
+          "photos": [
+            {
+              "url": "/static/seed/ananuri-fortress.jpg",
+              "width": 1280,
+              "height": 853,
+              "caption": "Ananuri Fortress",
+              "credit": {
+                "author": "Bernard Gagnon",
+                "license": "CC BY 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Ananuri_Fortress_02.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_georgia_s4",
+          "name": "Gergeti Trinity Church",
+          "day": 3,
+          "story": "The famous church at 2,170 m. We took a 4x4 up and hiked down through the meadows.",
+          "fields": [
+            {
+              "label": "Altitude",
+              "value": "2,170 m"
+            }
+          ],
+          "lat": 42.66239,
+          "lng": 44.62048,
+          "photos": [
+            {
+              "url": "/static/seed/gergeti-trinity-church.jpg",
+              "width": 1280,
+              "height": 851,
+              "caption": "Gergeti Trinity Church",
+              "credit": {
+                "author": "Vyacheslav Argenberg",
+                "license": "CC BY 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Gergeti_Trinity_Church,_Mountain_pasture,_Georgia.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_georgia_s5",
+          "name": "Gudauri",
+          "day": 4,
+          "story": "We paraglided over the valleys — twenty minutes of floating above the Caucasus.",
+          "fields": [],
+          "lat": 42.47656,
+          "lng": 44.47703,
+          "photos": [
+            {
+              "url": "/static/seed/gudauri.jpg",
+              "width": 1280,
+              "height": 857,
+              "caption": "Gudauri",
+              "credit": {
+                "author": "Mykhaylo Aleksyeyenko",
+                "license": "CC BY-SA 3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Flygudauri_wiki.jpg"
+              }
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-08-12T12:00:00.000Z",
+      "coverPhoto": {
+        "url": "/static/seed/gergeti-trinity-church.jpg",
+        "width": 1280,
+        "height": 851,
+        "caption": "Gergeti Trinity Church",
+        "credit": {
+          "author": "Vyacheslav Argenberg",
+          "license": "CC BY 4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Gergeti_Trinity_Church,_Mountain_pasture,_Georgia.jpg"
+        }
+      },
+      "budget": [
+        {
+          "category": "transport",
+          "label": "Flights DXB–TBS ×2",
+          "amount": 520
+        },
+        {
+          "category": "stay",
+          "label": "Old-town apartment, 4 nights",
+          "amount": 260,
+          "stopId": "j_georgia_s1"
+        },
+        {
+          "category": "activities",
+          "label": "Private sulphur bath, 1 hour",
+          "amount": 40,
+          "stopId": "j_georgia_s1"
+        },
+        {
+          "category": "food",
+          "label": "Khachapuri, khinkali and wine, 5 days",
+          "amount": 180,
+          "stopId": "j_georgia_s2"
+        },
+        {
+          "category": "transport",
+          "label": "Shared driver to Kazbegi, return",
+          "amount": 90,
+          "stopId": "j_georgia_s3"
+        },
+        {
+          "category": "transport",
+          "label": "4x4 to the church",
+          "amount": 30,
+          "stopId": "j_georgia_s4"
+        },
+        {
+          "category": "stay",
+          "label": "Guesthouse in Stepantsminda, 1 night",
+          "amount": 55,
+          "stopId": "j_georgia_s4"
+        },
+        {
+          "category": "activities",
+          "label": "Paragliding ×2",
+          "amount": 200,
+          "stopId": "j_georgia_s5"
+        }
+      ]
+    },
+    {
+      "id": "j_munnar",
+      "creatorId": "c_rohan",
+      "title": "Monsoon in Munnar",
+      "dek": "Tea hills in the clouds, a boat on Mattupetty and a sunrise above the mist — a long weekend home from Abu Dhabi.",
+      "region": "Munnar",
+      "country": "India",
+      "currency": "INR",
+      "tags": [
+        "mountains",
+        "monsoon",
+        "couples",
+        "budget"
+      ],
+      "bestMonths": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "durationDays": 3,
+      "travelers": 2,
+      "going": 129,
+      "likes": 1290,
+      "pullQuote": "In July the fog pours over the tea bushes like milk into a glass.",
+      "story": "We fly home to Kerala every summer. This time we stole three days in the hills before the family found us.",
+      "fields": [
+        {
+          "label": "Getting there",
+          "value": "Fly to Kochi, then 4 hours by road"
+        },
+        {
+          "label": "Monsoon",
+          "value": "Check road conditions before driving up"
+        }
+      ],
+      "stops": [
+        {
+          "id": "j_munnar_s1",
+          "name": "Munnar",
+          "day": 1,
+          "story": "The last hour of the drive is all hairpins and tea, the bushes clipped so evenly they look like green coral.",
+          "fields": [],
+          "lat": 10.087,
+          "lng": 77.06009,
+          "photos": [
+            {
+              "url": "/static/seed/munnar.jpg",
+              "width": 1280,
+              "height": 958,
+              "caption": "Munnar",
+              "credit": {
+                "author": "www.eatoutzone.com",
+                "license": "CC BY 3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Tea_plantations_in_Munnar.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_munnar_s2",
+          "name": "Mattupetty Dam",
+          "day": 1,
+          "story": "A pedal boat on the reservoir in the mist — completely silent except for the rain.",
+          "fields": [],
+          "lat": 10.1063,
+          "lng": 77.12391,
+          "photos": [
+            {
+              "url": "/static/seed/mattupetty-dam.jpg",
+              "width": 1280,
+              "height": 960,
+              "caption": "Mattupetty Dam",
+              "credit": {
+                "author": "കാക്കര",
+                "license": "CC BY-SA 3.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Mattupetty_Dam_-_%E0%B4%AE%E0%B4%BE%E0%B4%9F%E0%B5%8D%E0%B4%9F%E0%B5%81%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B5%86%E0%B4%9F%E0%B5%8D%E0%B4%9F%E0%B4%BF_%E0%B4%85%E0%B4%A3%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%86%E0%B4%9F%E0%B5%8D%E0%B4%9F%E0%B5%8D_-6.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_munnar_s3",
+          "name": "Top Station",
+          "day": 2,
+          "story": "We left at 5 am and waited. At 7:10 the clouds tore open and we were standing above a sea of white.",
+          "fields": [
+            {
+              "label": "Best time",
+              "value": "Sunrise"
+            }
+          ],
+          "lat": 10.09402,
+          "lng": 77.09686,
+          "photos": [
+            {
+              "url": "/static/seed/top-station.jpg",
+              "width": 1280,
+              "height": 790,
+              "caption": "Top Station",
+              "credit": {
+                "author": "Bimal K C from Cochin, India",
+                "license": "CC BY 2.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Munnar_Top_station.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "id": "j_munnar_s4",
+          "name": "Vattavada",
+          "day": 3,
+          "story": "Terraced vegetable farms up the slopes. A farmer sold us strawberries by the kilo.",
+          "fields": [],
+          "lat": 10.17729,
+          "lng": 77.25364,
+          "photos": [
+            {
+              "url": "/static/seed/vattavada.jpg",
+              "width": 1280,
+              "height": 615,
+              "caption": "Vattavada",
+              "credit": {
+                "author": "Ahamedhjewadh",
+                "license": "CC BY-SA 4.0",
+                "source": "https://commons.wikimedia.org/wiki/File:Vattavada_Valley.jpg"
+              }
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-07-30T06:00:00.000Z",
+      "coverPhoto": {
+        "url": "/static/seed/top-station.jpg",
+        "width": 1280,
+        "height": 790,
+        "caption": "Top Station",
+        "credit": {
+          "author": "Bimal K C from Cochin, India",
+          "license": "CC BY 2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Munnar_Top_station.jpg"
+        }
+      },
+      "budget": [
+        {
+          "category": "stay",
+          "label": "Homestay, 2 nights",
+          "amount": 5400
+        },
+        {
+          "category": "transport",
+          "label": "Car with driver from Kochi",
+          "amount": 3200,
+          "stopId": "j_munnar_s1"
+        },
+        {
+          "category": "activities",
+          "label": "Boating and tea museum",
+          "amount": 900,
+          "stopId": "j_munnar_s2"
+        },
+        {
+          "category": "food",
+          "label": "Homestay meals and roadside chai",
+          "amount": 2100,
+          "stopId": "j_munnar_s3"
+        },
+        {
+          "category": "other",
+          "label": "Strawberries and rain ponchos",
+          "amount": 400,
+          "stopId": "j_munnar_s4"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+name: travelgram
+description: "Travelgram - a creator hub for trips, with Ammachi on call."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cached_network_image: ^4.0.3
+  flutter_animate: ^4.5.2
+  http: ^1.6.0
+  image_picker: ^1.2.4
+  just_audio: ^0.10.6
+  share_plus: ^13.3.1
+  shared_preferences: ^2.5.6
+  speech_to_text: ^7.5.0
+  url_launcher: ^6.3.3
+  http_parser: ^4.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Bundled so typography never depends on the network (SIL OFL).
+  fonts:
+    - family: DMSans # the whole interface; variable: wght, opsz
+      fonts:
+        - asset: assets/fonts/DMSans.ttf
+    - family: NotoSansMalayalam # Ammachi's Malayalam; variable: wdth, wght
+      fonts:
+        - asset: assets/fonts/NotoSansMalayalam.ttf

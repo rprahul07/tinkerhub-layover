@@ -1,0 +1,25 @@
+{
+  "name": "travelgram-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Travelgram API: journeys, uploads, and Ammachi (Gemini + Sarvam Bulbul).",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed:build": "node scripts/build-seed.mjs",
+    "reset": "node scripts/reset-db.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@google/genai": "^2.28.0",
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "http-proxy-middleware": "^3.0.7",
+    "multer": "^2.4.0"
+  }
+}
