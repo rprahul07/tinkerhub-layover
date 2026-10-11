@@ -70,7 +70,14 @@ class HomeScreenState extends State<HomeScreen> {
         titleSpacing: 16,
         title: GestureDetector(
           onLongPress: () => showServerSheet(context),
-          child: Text('Travelgram', style: TT.display(23, wght: 800, spacing: -0.04)),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Image.asset('assets/branding/logo-mark-128.png', width: 28, height: 28, excludeFromSemantics: true),
+              const SizedBox(width: 8),
+              Flexible(child: Text('Travelgram', maxLines: 1, overflow: TextOverflow.ellipsis, style: TT.display(23, wght: 800, spacing: -0.04))),
+            ],
+          ),
         ),
         actions: [
           IconButton(

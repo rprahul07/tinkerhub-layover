@@ -67,7 +67,13 @@ class _JoinScreenState extends State<JoinScreen> {
           children: [
             GestureDetector(
               onLongPress: () => showServerSheet(context),
-              child: Text('Travelgram', style: TT.display(30, wght: 800, spacing: -0.04)),
+              child: Row(
+                children: [
+                  Image.asset('assets/branding/logo-mark-128.png', width: 40, height: 40, excludeFromSemantics: true),
+                  const SizedBox(width: 10),
+                  Flexible(child: Text('Travelgram', maxLines: 1, overflow: TextOverflow.ellipsis, style: TT.display(30, wght: 800, spacing: -0.04))),
+                ],
+              ),
             ),
             const SizedBox(height: 28),
             Text('Trips worth copying.', style: TT.display(34, wght: 750, height: 1.08)),

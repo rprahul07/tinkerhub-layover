@@ -37,6 +37,9 @@ export function createApp(options = {}) {
   app.use('/static/uploads', express.static(uploadsDir, { maxAge: '7d', immutable: true }));
   app.use('/static', express.static(config.publicDir, { maxAge: '7d', immutable: true }));
 
+  // Browsers ask for /favicon.ico on every page.
+  app.get('/favicon.ico', (_req, res) => res.sendFile(path.join(config.publicDir, 'brand', 'favicon-32.png'), { maxAge: '7d' }));
+
   app.get('/api/health', (_req, res) => res.json({ ok: true, llm: llm ? llm.name : 'offline', tts: tts.enabled ? 'sarvam' : 'none' }));
 
   // For testing on a phone: open http://<laptop-ip>:4000/app to download the Android build.

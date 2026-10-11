@@ -1,5 +1,5 @@
 name: travelgram
-description: "Travelgram - a creator hub for trips, with Ammachi on call."
+description: "Travelgram - real trips with real budgets, planned and booked with an AI travel consultant."
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -26,9 +26,12 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/branding/logo-mark-128.png
 
   # Bundled so typography never depends on the network (SIL OFL).
   fonts:
@@ -38,3 +41,17 @@ flutter:
     - family: NotoSansMalayalam # Ammachi's Malayalam; variable: wdth, wght
       fonts:
         - asset: assets/fonts/NotoSansMalayalam.ttf
+
+# Launcher icons: dart run flutter_launcher_icons (sources in /branding).
+flutter_launcher_icons:
+  image_path: "assets/branding/icon-square-1024.png"
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  adaptive_icon_background: "#D1491D"
+  adaptive_icon_foreground: "assets/branding/icon-foreground-1024.png"
+  web:
+    generate: true
+    image_path: "assets/branding/icon-square-1024.png"
+    background_color: "#FFFFFF"
+    theme_color: "#D1491D"

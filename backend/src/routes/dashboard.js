@@ -59,7 +59,7 @@ a{color:inherit}
 .layout{display:grid;grid-template-columns:224px 1fr;min-height:100vh}
 .side{background:var(--surface);border-right:1px solid var(--line);padding:18px 12px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column}
 .brand{display:flex;align-items:center;gap:10px;padding:4px 10px 18px;font-weight:650;font-size:14.5px}
-.brand i{width:24px;height:24px;border-radius:6px;background:var(--ink);display:inline-block}
+.brand img{width:26px;height:26px;border-radius:6px;display:block}
 .brand small{display:block;color:var(--muted);font-weight:400;font-size:12px;margin-top:-2px}
 .nav a{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:6px;text-decoration:none;color:var(--ink2);margin-bottom:1px}
 .nav a:hover{background:var(--line2)}
@@ -133,10 +133,10 @@ function page({ title, k, active, counts, voice, head, body, refresh }) {
   const nav = (v, label) =>
     `<a class="${active === v ? 'on' : ''}" href="/dashboard?key=${k}${v === 'overview' ? '' : `&view=${v}`}">${icon(v)}${label}${counts?.[v] != null ? `<span class="count">${num(counts[v])}</span>` : ''}</a>`;
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${esc(title)} · Travelgram Admin</title>${refresh ? `<meta http-equiv="refresh" content="${refresh}">` : ''}<style>${CSS}</style></head><body>
+<title>${esc(title)} · Travelgram Admin</title><link rel="icon" type="image/svg+xml" href="/static/brand/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="/static/brand/favicon-32.png"><link rel="apple-touch-icon" href="/static/brand/apple-touch-icon.png">${refresh ? `<meta http-equiv="refresh" content="${refresh}">` : ''}<style>${CSS}</style></head><body>
 <div class="layout">
 <aside class="side">
-  <div class="brand"><i></i><div>Travelgram<small>Admin</small></div></div>
+  <div class="brand"><img src="/static/brand/logo-mark-128.png" alt=""><div>Travelgram<small>Admin</small></div></div>
   <nav class="nav">${nav('overview', 'Overview')}${nav('crm', 'Leads')}${nav('creators', 'Users')}${nav('journeys', 'Journeys')}${nav('bookings', 'Bookings')}</nav>
   <div class="foot">
     <div class="status"><span class="dot ${voice?.configured ? 'on' : 'warn'}"></span>AI calling ${voice?.configured ? 'live' : 'in demo mode'}</div>
