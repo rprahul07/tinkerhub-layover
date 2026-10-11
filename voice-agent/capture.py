@@ -1,7 +1,7 @@
 """Voice capture on noisy phone lines.
 
 Phone calls arrive with traffic, fans, TV and line hiss. Left alone, that noise
-starts "user turns", interrupts Ammachi mid-sentence (which also clears the
+starts "user turns", interrupts the agent mid-sentence (which also clears the
 greeting already queued on Plivo) and gets transcribed into nonsense that the
 LLM then answers. The defences, in pipeline order:
 
@@ -9,8 +9,8 @@ LLM then answers. The defences, in pipeline order:
 2. GreetingGate: the caller is muted (silence passed on) while the pre-rendered
    greeting plays, so noise can't cut it off.
 3. Stricter Silero VAD: louder, more confident, longer speech before it counts.
-4. Turns start from words, not sound: one word while Ammachi is quiet, three
-   words to interrupt her while she speaks.
+4. Turns start from words, not sound: one word while the agent is quiet, three
+   words to interrupt it while it speaks.
 5. JunkTranscriptFilter: transcripts that are only noise ("hmm", ".", "<unk>")
    never reach the LLM.
 """
@@ -25,7 +25,7 @@ from pipecat.processors.frame_processor import FrameDirection, FrameProcessor
 from pipecat.turns.user_start.min_words_user_turn_start_strategy import MinWordsUserTurnStartStrategy
 from pipecat.turns.user_turn_strategies import UserTurnStrategies
 
-# Words needed to interrupt Ammachi while she is talking (a cough or "hmm" won't).
+# Words needed to interrupt the agent while it is talking (a cough or "hmm" won't).
 INTERRUPT_MIN_WORDS = 3
 
 # Sounds STT emits for noise, breathing and fillers. Real one-word answers

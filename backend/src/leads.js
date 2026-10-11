@@ -11,7 +11,7 @@ export function scoreLead(lead) {
   };
   if (lead.source === 'planner') add(25, 'Confirmed a budget plan');
   else if (lead.source === 'going') add(10, 'Tapped "I\'m going"');
-  else if (lead.source === 'ammachi') add(15, 'Asked Ammachi to plan');
+  else if (lead.source === 'ammachi') add(15, 'Asked the AI consultant to plan');
   if (lead.budgetAed > 0) add(15, 'Has a budget');
   if (lead.month) add(15, 'Knows when');
   if (lead.travelers > 0) add(10, 'Knows group size');

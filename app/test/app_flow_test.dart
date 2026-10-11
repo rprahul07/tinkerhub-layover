@@ -176,7 +176,7 @@ void main() {
 
   testWidgets('Ammachi answers in Malayalam and credits the trip she cites', (tester) async {
     await boot(tester);
-    await tester.tap(find.byTooltip('Chat with Ammachi'));
+    await tester.tap(find.byTooltip('Chat with the AI consultant'));
     await tester.pump(const Duration(seconds: 1));
     await tester.pump(const Duration(seconds: 1));
     await tester.tap(find.text('ദുബായിൽ നിന്ന് 1000 ദിർഹത്തിന് ഒരു വീക്കെൻഡ്?'));

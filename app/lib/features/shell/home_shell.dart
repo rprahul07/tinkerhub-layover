@@ -134,7 +134,7 @@ class _CallButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Semantics(
       button: true,
-      label: 'Call Ammachi, your travel assistant',
+      label: 'Call the AI consultant',
       child: GestureDetector(
         onTap: () {
           HapticFeedback.mediumImpact();
@@ -171,7 +171,7 @@ class _CallButton extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 2),
-              Text('Ammachi', style: TT.ui(11, wght: 600, color: TG.ink)),
+              FittedBox(fit: BoxFit.scaleDown, child: Text('AI Agent', maxLines: 1, softWrap: false, style: TT.ui(11, wght: 600, color: TG.ink))),
             ],
           ),
         ),

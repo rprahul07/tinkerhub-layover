@@ -43,7 +43,7 @@ class AmmachiAudio extends AmmachiEvent {
   final int index;
   final String? url;
   final String text;
-  final bool filler; // "let me see, kunje…" while she thinks; not part of the answer
+  final bool filler; // "one moment please…" while the model thinks; not part of the answer
 }
 
 class AmmachiDone extends AmmachiEvent {
@@ -323,11 +323,11 @@ class Api {
     try {
       res = await _client.send(req).timeout(const Duration(seconds: 25));
     } catch (_) {
-      yield AmmachiFailure('Ammachi can’t hear you — check your internet connection.');
+      yield AmmachiFailure('Can’t reach the AI consultant — check your internet connection.');
       return;
     }
     if (res.statusCode >= 400) {
-      yield AmmachiFailure('Ammachi couldn’t answer that (${res.statusCode}).');
+      yield AmmachiFailure('The AI consultant couldn’t answer that (${res.statusCode}).');
       return;
     }
 

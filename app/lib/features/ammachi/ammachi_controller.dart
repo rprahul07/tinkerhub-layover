@@ -46,7 +46,7 @@ class AmmachiController extends ChangeNotifier {
   bool muted = false;
   DateTime? callStartedAt;
   String caption = ''; // what Ammachi is saying right now
-  String lastHeard = ''; // what she last heard from the user
+  String lastHeard = ''; // what the agent last heard from the user
   int _quietTurns = 0;
   final _captions = <String, String>{};
 
@@ -119,10 +119,10 @@ class AmmachiController extends ChangeNotifier {
     if (status == null) await init();
     final greeting = lang == 'en' ? status?.greetingEn : status?.greetingMl;
     if (greeting != null && voiceOn) {
-      _captions[greeting] = lang == 'en' ? 'Hello kunje, it’s Ammachi. So, where are we travelling this time?' : 'ഹലോ കുഞ്ഞേ, അമ്മച്ചിയാണ്. എങ്ങോട്ടാ ഈ പ്രാവശ്യം യാത്ര?';
+      _captions[greeting] = lang == 'en' ? 'Hello, this is Travelgram’s AI travel consultant. Where are you planning to travel?' : 'നമസ്കാരം, ഞാൻ Travelgram-ന്റെ AI travel consultant ആണ്. എങ്ങോട്ടാണ് യാത്ര പ്ലാൻ ചെയ്യുന്നത്?';
       _enqueue(greeting); // she listens once the greeting finishes
     } else {
-      caption = lang == 'en' ? 'Hello kunje, where are we travelling?' : 'ഹലോ കുഞ്ഞേ, എങ്ങോട്ടാ യാത്ര?';
+      caption = lang == 'en' ? 'Hello, where are you planning to travel?' : 'നമസ്കാരം, എങ്ങോട്ടാണ് യാത്ര?';
       _listenSoon();
     }
   }
@@ -220,7 +220,7 @@ class AmmachiController extends ChangeNotifier {
           onDone: () {
             if (reply.streaming) {
               reply.streaming = false;
-              if (reply.text.isEmpty && reply.failure == null) reply.failure = 'Ammachi went quiet. Please ask again.';
+              if (reply.text.isEmpty && reply.failure == null) reply.failure = 'No reply came through. Please ask again.';
               if (!_playing) {
                 _setMood(AmmachiMood.idle);
                 _listenSoon();
@@ -268,7 +268,7 @@ class AmmachiController extends ChangeNotifier {
       return;
     }
     if (status?.voice != true) {
-      notice = 'Ammachi’s voice isn’t set up on the server yet (SARVAM_API_KEY).';
+      notice = 'Voice isn’t set up on the server yet (SARVAM_API_KEY).';
       _notify();
       return;
     }
@@ -328,7 +328,7 @@ class AmmachiController extends ChangeNotifier {
 
   Future<void> _startListening() async {
     if (!await _ensureStt()) {
-      notice = 'Voice input isn’t available here. Allow the microphone, or type to Ammachi instead.';
+      notice = 'Voice input isn’t available here. Allow the microphone, or type your question instead.';
       _notify();
       return;
     }
@@ -380,7 +380,7 @@ class AmmachiController extends ChangeNotifier {
       _listenSoon();
     } else {
       muted = true;
-      notice = lang == 'en' ? 'Ammachi is waiting. Tap the mic when you want to talk.' : 'അമ്മച്ചി കാത്തിരിക്കുന്നു. സംസാരിക്കാൻ മൈക്ക് തൊടൂ.';
+      notice = lang == 'en' ? 'The consultant is waiting. Tap the mic when you want to talk.' : 'സംസാരിക്കാൻ തയ്യാറാകുമ്പോൾ മൈക്ക് തൊടൂ.';
       _notify();
     }
   }
@@ -408,8 +408,8 @@ class AmmachiController extends ChangeNotifier {
     final quiet = e.errorMsg == 'error_no_match' || e.errorMsg == 'error_speech_timeout';
     if (!quiet) {
       notice = lang == 'en'
-          ? 'Ammachi couldn’t hear that (${e.errorMsg}). Try again or type.'
-          : 'അമ്മച്ചിക്ക് കേൾക്കാൻ പറ്റിയില്ല. ഒന്നുകൂടി പറയൂ, അല്ലെങ്കിൽ ടൈപ്പ് ചെയ്യൂ.';
+          ? 'Couldn’t hear that (${e.errorMsg}). Try again or type.'
+          : 'കേൾക്കാൻ പറ്റിയില്ല. ഒന്നുകൂടി പറയൂ, അല്ലെങ്കിൽ ടൈപ്പ് ചെയ്യൂ.';
     }
     if (!busy) {
       _setMood(AmmachiMood.idle);

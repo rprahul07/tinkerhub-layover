@@ -167,7 +167,7 @@ export function ammachiRouter(store, { llm, tts, voiceLines, callModel }) {
     } catch (err) {
       if (!abort.signal.aborted) {
         console.error('[ammachi] chat failed:', err);
-        send('error', { message: 'Ammachi lost her train of thought. Please ask again.' });
+        send('error', { message: 'The AI consultant could not finish that answer. Please ask again.' });
       }
     } finally {
       res.end();

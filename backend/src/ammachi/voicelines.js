@@ -1,15 +1,15 @@
-// Short lines Ammachi can say instantly: a greeting when a call connects, and
+// Short lines the AI consultant can say instantly: a greeting when a call connects, and
 // a "let me see…" filler while Gemini thinks. They are synthesised once at
 // startup (and cached on disk by the TTS client), so they play in ~1 second.
 
 const LINES = {
   greeting: {
-    ml: 'ഹലോ കുഞ്ഞേ, അമ്മച്ചിയാണ്. എങ്ങോട്ടാ ഈ പ്രാവശ്യം യാത്ര?',
-    en: "Hello kunje, it's Ammachi. So, where are we travelling this time?",
+    ml: 'നമസ്കാരം, ഞാൻ Travelgram-ന്റെ AI travel consultant ആണ്. എങ്ങോട്ടാണ് യാത്ര പ്ലാൻ ചെയ്യുന്നത്?',
+    en: "Hello, this is Travelgram's AI travel consultant. Where are you planning to travel?",
   },
   fillers: {
-    ml: ['ഹ്മ്, അമ്മച്ചി ഒന്ന് നോക്കട്ടെ.', 'ശരി കുഞ്ഞേ, ഒരു നിമിഷം.', 'ആഹാ, കൊള്ളാമല്ലോ. നോക്കട്ടെ.'],
-    en: ['Hmm, let Ammachi have a look.', 'Alright kunje, one moment.', 'Oh, lovely. Let me see.'],
+    ml: ['ശരി, ഒരു നിമിഷം നോക്കട്ടെ.', 'മനസ്സിലായി, ഒന്ന് പരിശോധിക്കട്ടെ.', 'ഒരു നിമിഷം, ഞാൻ നോക്കാം.'],
+    en: ['Sure, one moment please.', 'Understood, let me check.', 'Just a moment while I look that up.'],
   },
 };
 

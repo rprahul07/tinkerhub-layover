@@ -133,7 +133,7 @@ class ProfileScreenState extends State<ProfileScreen> {
             child: EmptyView(
               icon: Icons.savings_outlined,
               title: 'No plans yet',
-              body: 'Tell Ammachi your budget and she’ll build a trip from real ones in the community.',
+              body: 'Tell the AI consultant your budget and it’ll build a trip from real ones in the community.',
               action: FilledButton(
                 onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const PlannerScreen())),
                 child: const Text('Plan a trip'),

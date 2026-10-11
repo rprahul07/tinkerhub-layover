@@ -94,7 +94,7 @@ class _AmmachiScreenState extends State<AmmachiScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Ammachi', style: TT.ui(16, wght: 700)),
+                    Text('AI Consultant', style: TT.ui(16, wght: 700)),
                     Text(
                       _statusLine(),
                       style: TT.ui(12, color: TG.muted),
@@ -114,7 +114,7 @@ class _AmmachiScreenState extends State<AmmachiScreen> {
               icon: Icon(_c.voiceOn ? Icons.volume_up_outlined : Icons.volume_off_outlined),
             ),
             IconButton(
-              tooltip: 'Call Ammachi',
+              tooltip: 'Call the AI consultant',
               onPressed: _call,
               style: IconButton.styleFrom(backgroundColor: TG.success, foregroundColor: Colors.white),
               icon: const Icon(Icons.call, size: 20),
@@ -267,8 +267,8 @@ class _Welcome extends StatelessWidget {
     final journey = controller.contextJourney;
     final ideas = journey != null
         ? (en
-              ? ['Tell me this trip like a story', 'Can I do this cheaper?', 'What should I pack?']
-              : ['ഈ യാത്ര ഒരു കഥ പോലെ പറഞ്ഞുതരാമോ?', 'ഇത് കുറഞ്ഞ ചിലവിൽ ചെയ്യാൻ പറ്റുമോ?', 'എന്തൊക്കെ കൊണ്ടുപോകണം?'])
+              ? ['Summarise this trip for me', 'Can I do this cheaper?', 'What should I pack?']
+              : ['ഈ യാത്രയുടെ ഒരു ചുരുക്കം പറയാമോ?', 'ഇത് കുറഞ്ഞ ചിലവിൽ ചെയ്യാൻ പറ്റുമോ?', 'എന്തൊക്കെ കൊണ്ടുപോകണം?'])
         : (en
               ? ['A weekend from Dubai under AED 1,000', 'Somewhere cool to escape the heat', 'Desert camp for a family of four']
               : ['ദുബായിൽ നിന്ന് 1000 ദിർഹത്തിന് ഒരു വീക്കെൻഡ്?', 'ചൂടിൽ നിന്ന് രക്ഷപ്പെടാൻ ഒരു തണുത്ത സ്ഥലം', 'നാലുപേരുള്ള കുടുംബത്തിന് ഡെസേർട്ട് ക്യാമ്പ്']);
@@ -286,7 +286,7 @@ class _Welcome extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 16),
-        Text(en ? 'Hi, I’m Ammachi' : 'ഹലോ കുഞ്ഞേ, അമ്മച്ചിയാണ്', textAlign: TextAlign.center, style: en ? TT.display(22) : TT.ml(21, wght: 650, height: 1.4)),
+        Text(en ? 'Hi, I’m your AI travel consultant' : 'നമസ്കാരം, ഞാൻ നിങ്ങളുടെ AI travel consultant', textAlign: TextAlign.center, style: en ? TT.display(22) : TT.ml(21, wght: 650, height: 1.4)),
         const SizedBox(height: 6),
         Text(
           'Ask about any trip, get a plan that fits your budget, or hear a journey told in Malayalam. Every suggestion comes from a real traveller’s trip.',
@@ -301,7 +301,7 @@ class _Welcome extends StatelessWidget {
                 style: FilledButton.styleFrom(backgroundColor: TG.success, minimumSize: const Size(48, 44)),
                 onPressed: onCall,
                 icon: const Icon(Icons.call, size: 18),
-                label: const Text('Call her'),
+                label: const Text('Call now'),
               ),
             ),
             const SizedBox(width: 8),
@@ -518,7 +518,7 @@ class _Dots extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Semantics(
-    label: 'Ammachi is thinking',
+    label: 'The AI consultant is thinking',
     child: Row(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -576,7 +576,7 @@ class _Composer extends StatelessWidget {
                         onSubmitted: onSubmit,
                         style: TT.ui(15),
                         decoration: InputDecoration(
-                          hintText: en ? 'Ask Ammachi…' : 'അമ്മച്ചിയോട് ചോദിക്കൂ…',
+                          hintText: en ? 'Ask the AI consultant…' : 'നിങ്ങളുടെ ചോദ്യം ചോദിക്കൂ…',
                           hintStyle: en ? TT.ui(15, color: TG.faint) : TT.ml(15, color: TG.faint, height: 1.3),
                           border: OutlineInputBorder(borderRadius: BorderRadius.circular(24), borderSide: BorderSide.none),
                           enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(24), borderSide: BorderSide.none),
@@ -603,7 +603,7 @@ class _Composer extends StatelessWidget {
                   return Semantics(
                     button: true,
                     toggled: c.listening,
-                    label: c.listening ? 'Stop listening' : 'Talk to Ammachi',
+                    label: c.listening ? 'Stop listening' : 'Talk to the AI consultant',
                     child: GestureDetector(
                       onTap: () {
                         HapticFeedback.mediumImpact();

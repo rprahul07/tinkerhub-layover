@@ -74,7 +74,7 @@ class _PlannerScreenState extends State<PlannerScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Plan with Ammachi')),
+      appBar: AppBar(title: const Text('Plan with AI')),
       body: _busy
           ? const _Planning()
           : ListView(
@@ -82,7 +82,7 @@ class _PlannerScreenState extends State<PlannerScreen> {
               children: [
                 Text('What can you spend?', style: TT.display(24, wght: 750)),
                 const SizedBox(height: 4),
-                Text('Ammachi builds a day-by-day plan from trips people actually took, with what they actually paid.', style: TT.ui(14.5, color: TG.muted)),
+                Text('Our AI consultant builds a day-by-day plan from trips people actually took, with what they actually paid.', style: TT.ui(14.5, color: TG.muted)),
                 const SizedBox(height: 20),
                 Row(
                   children: [
@@ -196,7 +196,7 @@ class _Planning extends StatelessWidget {
           child: const ClipOval(child: OverflowBox(maxWidth: 170, maxHeight: 170, child: AmmachiAvatar(mood: AmmachiMood.thinking, size: 170))),
         ),
         const SizedBox(height: 18),
-        Text('Ammachi is planning…', style: TT.display(19)),
+        Text('Planning your trip…', style: TT.display(19)),
         const SizedBox(height: 4),
         Text('Matching your budget against real trips.', style: TT.ui(14, color: TG.muted)),
         const SizedBox(height: 20),
@@ -372,7 +372,7 @@ class _PlanScreenState extends State<PlanScreen> {
           ],
           const SizedBox(height: 8),
           Text(
-            p.source == 'gemini' ? 'Planned by Ammachi (Gemini) from community trips. Prices are what travellers paid.' : 'Planned from community trips (offline mode).',
+            p.source == 'gemini' ? 'Planned by the AI consultant (Gemini) from community trips. Prices are what travellers paid.' : 'Planned from community trips (offline mode).',
             style: TT.ui(12, color: TG.faint),
           ),
         ],

@@ -78,7 +78,7 @@ class DeskScreenState extends State<DeskScreen> {
               soft: TG.accentSoft,
               icon: Icons.savings_outlined,
               title: 'Budget trip planner',
-              body: 'Tell Ammachi what you can spend. She builds a day-by-day plan from real trips and real prices in the community.',
+              body: 'Tell the AI consultant what you can spend. It builds a day-by-day plan from real trips and real prices in the community.',
               cta: 'Plan a trip',
               onTap: () => _open(const PlannerScreen()),
               footer: Wrap(
@@ -98,7 +98,7 @@ class DeskScreenState extends State<DeskScreen> {
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                 leading: const CircleAvatar(backgroundColor: TG.success, child: Icon(Icons.call, color: Colors.white, size: 20)),
                 title: Text('Rather talk it through?', style: TT.ui(15, wght: 650)),
-                subtitle: Text('Call Ammachi — in Malayalam or English', style: TT.ui(13, color: TG.muted)),
+                subtitle: Text('Call the AI consultant — Malayalam or English', style: TT.ui(13, color: TG.muted)),
                 trailing: const Icon(Icons.chevron_right_rounded, color: TG.faint),
                 onTap: () => CallScreen.open(context),
               ),

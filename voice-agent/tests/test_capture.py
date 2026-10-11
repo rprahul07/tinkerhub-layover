@@ -131,9 +131,11 @@ def test_trim_mulaw_silence_keeps_short_lead_in():
 def test_greeting_is_short_and_in_the_right_language():
     ml = bot.greeting({"name": "Rahul Raj", "lang": "ml"})
     en = bot.greeting({"name": "Rahul Raj", "lang": "en"})
-    assert ml.startswith("ഹലോ Rahul,") and "Travelgram" in ml
-    assert en.startswith("Hi Rahul,")
-    assert len(ml) < 120 and len(en) < 120
+    assert ml.startswith("നമസ്കാരം Rahul,") and "Travelgram" in ml and "AI consultant" in ml
+    assert en.startswith("Hello Rahul,") and "AI consultant" in en
+    for persona in ("അമ്മച്ചി", "Ammachi", "kunje", "കുഞ്ഞേ"):
+        assert persona not in ml + en
+    assert len(ml) < 140 and len(en) < 140
 
 
 def test_call_details_carry_what_we_know():

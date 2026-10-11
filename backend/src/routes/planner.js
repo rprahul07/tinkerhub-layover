@@ -21,7 +21,7 @@ export function plannerRouter(store, { llm }) {
   // "I have AED 1,000 and 2 days" → a plan from real trips.
   r.post('/planner', async (req, res) => {
     const { errors, request } = normaliseRequest(req.body);
-    if (Object.keys(errors).length) throw new HttpError(400, 'Tell Ammachi a little more.', errors);
+    if (Object.keys(errors).length) throw new HttpError(400, 'Add a few more details.', errors);
     const viewer = viewerOf(req, store);
     const plan = await buildPlan(store, llm, request);
     const saved = store.addPlan({ ...plan, userId: viewer.userId });

@@ -84,7 +84,7 @@ class HomeScreenState extends State<HomeScreen> {
             onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SearchScreen())),
           ),
           IconButton(
-            tooltip: 'Chat with Ammachi',
+            tooltip: 'Chat with the AI consultant',
             icon: const Icon(Icons.chat_bubble_outline_rounded),
             onPressed: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const AmmachiScreen())),
           ),
@@ -158,7 +158,7 @@ class PlannerBanner extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 16, 16, 4),
       child: Pressable(
-        semanticLabel: 'Plan a trip on your budget with Ammachi',
+        semanticLabel: 'Plan a trip on your budget with the AI consultant',
         onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const PlannerScreen())),
         child: Container(
           padding: const EdgeInsets.fromLTRB(18, 16, 14, 16),
@@ -172,7 +172,7 @@ class PlannerBanner extends StatelessWidget {
                     Text('Plan a trip on your budget', style: TT.display(17, wght: 700, color: Colors.white)),
                     const SizedBox(height: 4),
                     Text(
-                      'Tell Ammachi what you can spend. She builds a day-by-day plan from real trips and real prices.',
+                      'Tell the AI consultant what you can spend. It builds a day-by-day plan from real trips and real prices.',
                       style: TT.ui(13.5, color: Colors.white70, height: 1.4),
                     ),
                     const SizedBox(height: 12),

@@ -168,8 +168,8 @@ export function deterministicPlan(store, req) {
   const creator = store.creator(j.creatorId)?.name ?? 'a traveller';
   const summary =
     req.lang === 'en'
-      ? `Kunje, for ${formatMoney(req.budget, req.currency)} I'd follow ${creator}'s "${j.title}". It comes to about ${formatMoney(best.estAed, 'AED')} for ${req.travelers}.`
-      : `കുഞ്ഞേ, ${formatMoney(req.budget, req.currency)} കൊണ്ട് ${creator} എഴുതിയ "${j.title}" പോലെ പോകാം. ${req.travelers} പേർക്ക് ഏകദേശം ${formatMoney(best.estAed, 'AED')} ആകും.`;
+      ? `For ${formatMoney(req.budget, req.currency)}, I recommend following ${creator}'s "${j.title}". It comes to about ${formatMoney(best.estAed, 'AED')} for ${req.travelers}.`
+      : `${formatMoney(req.budget, req.currency)} ബജറ്റിൽ ${creator} എഴുതിയ "${j.title}" പിന്തുടരാൻ ഞാൻ നിർദ്ദേശിക്കുന്നു. ${req.travelers} പേർക്ക് ഏകദേശം ${formatMoney(best.estAed, 'AED')} ആകും.`;
   return finalise(store, req, { title: j.title, summary, days, tips: (j.fields ?? []).map((f) => `${f.label}: ${f.value}`) }, 'catalogue');
 }
 
@@ -177,8 +177,8 @@ export async function buildPlan(store, llm, req) {
   if (!llm?.json) return deterministicPlan(store, req);
   const top = candidates(store, req).slice(0, 6);
   const catalogue = top.map((c) => describeForPlanner(store, c)).join('\n');
-  const system = `You are Ammachi, a Malayali grandmother in Dubai who plans trips for the Travelgram community. You build plans ONLY from the trips below: use their places and their real costs (convert to AED with the given rate, and scale per person and per day to this group). Never invent places or prices. Keep within the budget if at all possible; if impossible, get as close as you can and say so. Each item must carry the journeyId of the trip it comes from. Include stay and transport costs where the trips had them.
-Write "title" in English. Write "summary" (2 short sentences, warm, spoken style, crediting the creators by name) and "tips" in ${req.lang === 'en' ? 'English' : 'Malayalam script (place names may stay in English)'}.
+  const system = `You are the Travelgram AI Consultant, a professional travel consultant who plans trips for the Travelgram community. You build plans ONLY from the trips below: use their places and their real costs (convert to AED with the given rate, and scale per person and per day to this group). Never invent places or prices. Keep within the budget if at all possible; if impossible, get as close as you can and say so. Each item must carry the journeyId of the trip it comes from. Include stay and transport costs where the trips had them.
+Write "title" in English. Write "summary" (2 short sentences, professional and concise, crediting the creators by name) and "tips" in ${req.lang === 'en' ? 'English' : 'Malayalam script (place names may stay in English)'}.
 
 Trips:
 ${catalogue}`;

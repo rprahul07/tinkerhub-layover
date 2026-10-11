@@ -619,8 +619,8 @@ class _AmmachiRow extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Ammachi', style: TT.ui(15, wght: 650)),
-                  Text('Hear this trip told in Malayalam, or ask her anything about it.', style: TT.ui(13, color: TG.muted)),
+                  Text('AI Consultant', style: TT.ui(15, wght: 650)),
+                  Text('Hear a summary of this trip in Malayalam, or ask anything about it.', style: TT.ui(13, color: TG.muted)),
                   const SizedBox(height: 8),
                   Row(
                     children: [
@@ -628,7 +628,7 @@ class _AmmachiRow extends StatelessWidget {
                         style: OutlinedButton.styleFrom(minimumSize: const Size(40, 38), backgroundColor: Colors.white),
                         onPressed: () => Navigator.of(context).push(
                           MaterialPageRoute(
-                            builder: (_) => AmmachiScreen(contextJourney: journey, initialPrompt: 'ഈ യാത്രയെക്കുറിച്ച് ഒരു കഥ പോലെ പറഞ്ഞുതരാമോ?'),
+                            builder: (_) => AmmachiScreen(contextJourney: journey, initialPrompt: 'ഈ യാത്രയുടെ ഒരു ചുരുക്കം പറയാമോ?'),
                           ),
                         ),
                         icon: const Icon(Icons.play_arrow_rounded, size: 18),

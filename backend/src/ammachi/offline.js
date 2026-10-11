@@ -1,38 +1,38 @@
 // Used when GEMINI_API_KEY is not configured (or Gemini fails before speaking).
-// No language model: Ammachi picks trips with the same retrieval Gemini gets
-// and fills in warm templates. The app labels these replies as offline.
+// No language model: the consultant picks trips with the same retrieval Gemini gets
+// and fills in short templates. The app labels these replies as offline.
 import { priceOf, rank } from './catalog.js';
 
 const TOPICS = ['desert', 'beach', 'mountains', 'city', 'culture', 'food', 'budget', 'monsoon'];
 
 const OPENERS = {
   ml: {
-    desert: 'മരുഭൂമിയിൽ ഒരു രാത്രിയാണോ മോഹം? കേട്ടോ കുഞ്ഞേ.',
-    beach: 'കടൽ കാണണോ കുഞ്ഞേ? എങ്കിൽ ഇതാ.',
-    mountains: 'മല കയറാനാണോ മോഹം? തണുപ്പുള്ള ഒരു വഴി പറയാം.',
-    city: 'നഗരം ചുറ്റിക്കാണാനാണോ? അമ്മച്ചിക്ക് പറ്റിയ ഒന്നുണ്ട്.',
-    culture: 'പഴയ കാര്യങ്ങൾ കാണാനാണോ ഇഷ്ടം? നല്ലത്, കുഞ്ഞേ.',
-    food: 'വയറു നിറയ്ക്കാനുള്ള യാത്രയാണോ? എങ്കിൽ കേട്ടോ.',
-    budget: 'കുറഞ്ഞ ചെലവിൽ പോകണോ? നല്ല കാര്യം, കുഞ്ഞേ.',
-    monsoon: 'മഴ കാണാനാണോ കുഞ്ഞേ? അമ്മച്ചിക്ക് പറ്റിയ ഒന്നുണ്ട്.',
-    default: 'ശരി കുഞ്ഞേ, അമ്മച്ചി ഒന്ന് നോക്കട്ടെ.',
+    desert: 'മരുഭൂമി യാത്രയ്ക്ക് നല്ല ഒരു ഓപ്ഷൻ ഇതാ.',
+    beach: 'ബീച്ച് യാത്രയ്ക്ക് ഇത് പരിഗണിക്കാം.',
+    mountains: 'മലയോര യാത്രയ്ക്ക് നല്ല ഒരു ഓപ്ഷൻ ഇതാ.',
+    city: 'സിറ്റി യാത്രയ്ക്ക് ഇത് നോക്കാം.',
+    culture: 'ചരിത്രവും സംസ്കാരവും കാണാൻ ഇത് നല്ലതാണ്.',
+    food: 'ഭക്ഷണത്തിന് പ്രാധാന്യമുള്ള ഒരു യാത്ര ഇതാ.',
+    budget: 'കുറഞ്ഞ ബജറ്റിൽ ഇത് പരിഗണിക്കാം.',
+    monsoon: 'മഴക്കാല യാത്രയ്ക്ക് ഒരു ഓപ്ഷൻ ഇതാ.',
+    default: 'നിങ്ങൾക്ക് അനുയോജ്യമായ ഒരു യാത്ര ഇതാ.',
   },
   en: {
-    desert: 'A night in the desert, is it? Listen, kunje.',
-    beach: 'You want the sea, kunje? Then here.',
-    mountains: 'Up into the mountains, is it? Let me tell you a cool one.',
-    city: 'Want to roam the city? Ammachi has a good one.',
-    culture: 'Old forts and museums? Very good, kunje.',
-    food: 'A trip for the stomach! Then listen carefully.',
-    budget: 'Travelling light on money? Very sensible, kunje.',
-    monsoon: 'You want the rain, kunje? Ammachi has just the thing.',
-    default: 'Alright kunje, let Ammachi have a look.',
+    desert: 'For a desert trip, here is a good option.',
+    beach: 'For the beach, I would suggest this.',
+    mountains: 'For the mountains, here is a good option.',
+    city: 'For a city break, consider this.',
+    culture: 'For history and culture, this is a strong choice.',
+    food: 'For a food-focused trip, here is one.',
+    budget: 'On a tight budget, consider this.',
+    monsoon: 'For the rainy season, here is an option.',
+    default: 'Here is a trip that should suit you.',
   },
 };
 
 const CLOSERS = {
-  ml: 'സൂക്ഷിച്ച് പോയി വാ കുഞ്ഞേ.',
-  en: 'Go carefully and come back with stories, kunje.',
+  ml: 'കൂടുതൽ വിവരങ്ങൾ വേണമെങ്കിൽ ചോദിക്കൂ.',
+  en: 'Let me know if you would like more details.',
 };
 
 export function offlineReply(store, { text, lang, contextJourneyId }) {

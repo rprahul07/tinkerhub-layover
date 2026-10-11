@@ -113,7 +113,7 @@ class _CallScreenState extends State<CallScreen> with SingleTickerProviderStateM
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text(m.fromUser ? 'You' : 'Ammachi', style: TT.ui(12, wght: 650, color: m.fromUser ? Colors.white54 : const Color(0xFFFDBA74))),
+                              Text(m.fromUser ? 'You' : 'AI Consultant', style: TT.ui(12, wght: 650, color: m.fromUser ? Colors.white54 : const Color(0xFF7DD3FC))),
                               const SizedBox(height: 2),
                               Text(m.text.trim(), style: isMalayalam(m.text) ? TT.ml(15.5, color: Colors.white) : TT.ui(15, color: Colors.white)),
                             ],
@@ -138,7 +138,7 @@ class _CallScreenState extends State<CallScreen> with SingleTickerProviderStateM
           backgroundColor: TG.night,
           body: DecoratedBox(
             decoration: const BoxDecoration(
-              gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [Color(0xFF1F1A17), TG.night]),
+              gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: [Color(0xFF1E293B), Color(0xFF0B1120)]),
             ),
             child: SafeArea(
               child: ListenableBuilder(
@@ -164,7 +164,7 @@ class _CallScreenState extends State<CallScreen> with SingleTickerProviderStateM
                         ),
                       ),
                       const SizedBox(height: 8),
-                      Text('Ammachi', style: TT.display(26, color: Colors.white)),
+                      Text('AI Consultant', style: TT.display(26, color: Colors.white)),
                       const SizedBox(height: 4),
                       Semantics(
                         liveRegion: true,
@@ -259,7 +259,7 @@ class _PulsingAvatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ringColor = mood == AmmachiMood.listening ? const Color(0xFF34D399) : const Color(0xFFFDBA74);
+    final ringColor = mood == AmmachiMood.listening ? const Color(0xFF34D399) : const Color(0xFF7DD3FC);
     final showRings = active && (mood == AmmachiMood.speaking || mood == AmmachiMood.listening);
     return LayoutBuilder(
       builder: (context, box) {
@@ -290,7 +290,7 @@ class _PulsingAvatar extends StatelessWidget {
             child: Container(
               width: size,
               height: size,
-              decoration: const BoxDecoration(shape: BoxShape.circle, color: Color(0xFF2A2421)),
+              decoration: const BoxDecoration(shape: BoxShape.circle, color: Color(0xFF1E293B)),
               child: ClipOval(child: OverflowBox(maxWidth: size * 1.35, maxHeight: size * 1.35, child: AmmachiAvatar(mood: mood, size: size * 1.35, soundLevel: level))),
             ),
           ),

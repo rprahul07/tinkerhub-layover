@@ -12,7 +12,7 @@ import { DOCS } from '../documents.js';
 
 const MONTHS = ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const DOC_LABEL = { passport: 'Passport', residence: 'Residence visa', bank: 'Bank statement', photo: 'Photo' };
-const SOURCE_LABEL = { planner: 'Budget plan', going: 'I’m going', documents: 'Document check', ammachi: 'Ammachi chat' };
+const SOURCE_LABEL = { planner: 'Budget plan', going: 'I’m going', documents: 'Document check', ammachi: 'AI consultant chat' };
 const SOURCES = Object.keys(SOURCE_LABEL);
 const CALL_LABEL = { simulated: 'Call simulated', ringing: 'Ringing', in_progress: 'On call', completed: 'Call completed', failed: 'Call failed', no_phone: 'No phone' };
 const STAGE_TONE = { 'High probability': 'green', Called: 'blue', Calling: 'blue', Qualified: 'amber', Contactable: 'gray', Interested: 'gray' };

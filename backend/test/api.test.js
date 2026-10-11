@@ -231,7 +231,7 @@ test('budget planner builds a plan from real trips, scaled to the group (no AI)'
   assert.ok(plan.trips.length >= 1 && plan.trips.every((t) => t.creator.name));
   assert.ok(plan.days.flatMap((d) => d.items).every((it) => plan.basedOn.includes(it.journeyId)));
   assert.equal(plan.totalAed, plan.days.flatMap((d) => d.items).reduce((s, it) => s + it.costAed, 0));
-  assert.match(plan.summary, /kunje/i);
+  assert.match(plan.summary, /I recommend/);
   assert.equal((await post(api.base, '/api/planner', { days: 2 })).status, 400);
 });
 

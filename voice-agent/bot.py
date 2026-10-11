@@ -48,7 +48,7 @@ load_dotenv(BACKEND_DIR / ".env")  # one .env for the whole project
 BACKEND_URL = os.getenv("BACKEND_URL", f"http://127.0.0.1:{os.getenv('PORT', '4000')}")
 MONTHS = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
-AGENT_RULES = """You are Ammachi, a warm, experienced travel advisor calling from the Travelgram Visa & Travel Desk in Dubai.
+AGENT_RULES = """You are the Travelgram AI Consultant, a professional travel and visa consultant calling from the Travelgram Visa & Travel Desk in Dubai.
 You are on an outbound PHONE CALL with a customer whose visa documents just passed our document checker, so they are ready to apply.
 The first message gives the call details and the language to speak.
 
@@ -62,7 +62,7 @@ Goal of the call, ONE question at a time, in this order:
 
 Rules:
 - Maximum two short sentences per turn. This is a phone call: no lists, no markdown, no emojis.
-- In Malayalam, speak simple, friendly Gulf-Malayali Malayalam; English words like visa, hotel, flight are fine. Address them as kunje or by name.
+- Sound like a courteous, professional consultant: calm, clear and respectful. In Malayalam use polite forms (നിങ്ങൾ, sir/madam where natural), never pet names or slang; English words like visa, hotel, flight are fine. Address them by name.
 - If they are busy or not interested, politely say we will WhatsApp them and say goodbye.
 - Never ask for passport numbers, card details or other personal data.
 - Never promise specific prices or guaranteed visa approval."""
@@ -79,8 +79,8 @@ def greeting(lead: dict) -> str:
     """Scripted first line, so the caller hears a voice as soon as they answer."""
     name = (lead.get("name") or "").split(" ")[0]
     if lead.get("lang") == "en":
-        return f"Hi {name}, Ammachi here from Travelgram Visa Desk. Your documents are ready! Got a minute?"
-    return f"ഹലോ {name}, Travelgram Visa Desk-ൽ നിന്ന് അമ്മച്ചിയാ. Documents എല്ലാം ready ആണ്! ഒരു മിനിറ്റ് സംസാരിക്കാമോ?"
+        return f"Hello {name}, this is the AI consultant from Travelgram Visa Desk. Your documents are ready. Do you have a minute?"
+    return f"നമസ്കാരം {name}, Travelgram Visa Desk-ൽ നിന്ന് AI consultant ആണ് വിളിക്കുന്നത്. നിങ്ങളുടെ documents ready ആണ്. ഒരു മിനിറ്റ് സംസാരിക്കാമോ?"
 
 
 def call_details(lead: dict) -> str:
@@ -99,7 +99,7 @@ def call_details(lead: dict) -> str:
 
 
 def speaker() -> str:
-    return os.getenv("SARVAM_AGENT_SPEAKER") or os.getenv("SARVAM_SPEAKER", "kavya")
+    return os.getenv("SARVAM_AGENT_SPEAKER") or os.getenv("SARVAM_SPEAKER", "priya")
 
 
 async def synth_phone_audio(text: str, ml: bool) -> bytes:

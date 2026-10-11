@@ -27,8 +27,8 @@ export const config = {
   sarvam: {
     apiKey: env('SARVAM_API_KEY'),
     model: env('SARVAM_TTS_MODEL', 'bulbul:v3'),
-    speaker: env('SARVAM_SPEAKER', 'kavitha'),
-    pace: Number(env('SARVAM_PACE', '0.95')),
+    speaker: env('SARVAM_SPEAKER', 'priya'),
+    pace: Number(env('SARVAM_PACE', '1.0')),
   },
   // Outbound AI calls: Plivo dials, the Pipecat agent (voice-agent/) talks.
   voice: {

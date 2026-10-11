@@ -73,7 +73,7 @@ class _JoinScreenState extends State<JoinScreen> {
             Text('Trips worth copying.', style: TT.display(34, wght: 750, height: 1.08)),
             const SizedBox(height: 10),
             Text(
-              'Real itineraries with real budgets, posted by travellers you can follow. Plan your own with Ammachi, our voice assistant.',
+              'Real itineraries with real budgets, posted by travellers you can follow. Plan your own with our AI travel consultant.',
               style: TT.ui(16, color: TG.muted, height: 1.5),
             ),
             const SizedBox(height: 32),
