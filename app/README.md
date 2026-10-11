@@ -1,17 +1,11 @@
-# travelgram
+# Travelgram app (Flutter)
 
-Travelgram - travel dispatches from Kerala, with Ammachi.
+The mobile app for Travelgram: a social travel platform with a trip tracker, an AI travel consultant, a visa document checker and a budget planner.
 
-## Getting Started
+```bash
+flutter pub get
+flutter run --dart-define=API_BASE=http://<your-laptop-ip>:4000
+flutter test
+```
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Set-up, configuration, architecture and the API it talks to are documented in the [main README](../README.md).

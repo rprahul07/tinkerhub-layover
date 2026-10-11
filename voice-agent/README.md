@@ -22,6 +22,23 @@ It reads keys from `backend/.env` (GEMINI_API_KEY, SARVAM_API_KEY, PLIVO_*).
 
 ## Real phone calls
 
-In `backend/.env` set `PLIVO_AUTH_ID`, `PLIVO_AUTH_TOKEN`, `PLIVO_FROM_NUMBER` (a Plivo number that can dial the UAE/India) and `PUBLIC_URL` (the ngrok https URL), then restart the backend. Without them calls are **simulated**: leads still show "Call simulated" in the CRM, and the dashboard says so.
+In `backend/.env` set `PLIVO_AUTH_ID`, `PLIVO_AUTH_TOKEN`, `PLIVO_FROM_NUMBER` (a Plivo number that can dial the UAE/India) and `PUBLIC_URL` (the public https URL of your server or tunnel), then restart the backend. Without them calls are **simulated**: leads still show "Call simulated" in the CRM, and the dashboard says so.
 
 Optional: `GEMINI_CALL_MODEL` (a faster model for calls), `SARVAM_AGENT_SPEAKER` (voice).
+
+## Noise handling
+
+Phone lines are noisy, so `capture.py` guards the conversation:
+- RNNoise suppression on caller audio
+- the caller is muted while the pre-rendered greeting plays
+- stricter Silero VAD
+- turns start from words, not sound (3 words to interrupt the agent, 1 word when it is quiet)
+- a filter that drops noise-only transcripts
+
+## Tests
+
+```
+.venv/Scripts/python -m pip install -r requirements-dev.txt
+.venv/Scripts/python -m pytest -m "not live"   # unit tests, no network
+.venv/Scripts/python -m pytest -m live         # 2 end-to-end calls with real Sarvam + Gemini (uses credits)
+```
